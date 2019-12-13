@@ -39,7 +39,7 @@
         
           <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
             <div class="footer-single">
-              <h6>About NaikCruise</h6>
+              <h6>About Wakuwaku</h6>
               <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Terms and Condition</a></li>

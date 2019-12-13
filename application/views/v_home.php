@@ -21,7 +21,7 @@
           <!-- single slide -->
           <div class="item active" style="background-image: url(img3/banner.jpg);">
             <div class="carousel-caption">
-              <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Naik Cruise</span>!</h2>
+              <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Wakuwaku</span>!</h2>
               <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/let's</span> sailing with us.</h3>
               <p data-wow-duration="1000ms" class="wow slideInRight animated">Get the best offers</p>
               
@@ -65,7 +65,7 @@
         <!-- 
         About Naik Cruise
         ==================================== -->
-    <section id="aboutNaikCruise" class="aboutNaikCruise">
+    <section id="aboutWakuwaku" class="aboutWakuwaku">
       <div class="container">
         <div class="sec-title-dark text-center wow fadeInDownBig" data-wow-duration ="500ms" data-wow-delay="100ms">
           <h2>About Naik Cruise</h2>

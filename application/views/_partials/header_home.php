@@ -59,7 +59,7 @@
   <li class="my-li"><a href="#brands">Brands</a></li>
   <li class="my-li"><a href="<?php echo site_url('')?>">Products</a></li>
   <li class="my-li"><a href="#contact">Contact</a></li>
-  <li class="my-li"><a href="#aboutNaikCruise">About</a></li>
+  <li class="my-li"><a href="#aboutWakuwaku">About</a></li>
 </ul>
     </div>
     <!-- End Navbar -->
