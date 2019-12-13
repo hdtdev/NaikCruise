@@ -1,6 +1,6 @@
 <?php $this->load->view("admin/_partialsAdmin/header")?>
 
-<?php 
+<?php
 	if (isset($lastId->id_product)) {
 		$oldId = intval($lastId->id_product);
 		$newId = $oldId + 1;
@@ -10,7 +10,7 @@
 	}
 ?>
 
-	<form method="post" class="form-horizontal formm">
+	<form method="post" enctype="multipart/form-data" class="form-horizontal formm">
 		<div class="form-group">
 			<label>ID</label>
 			<input class="form-control" type="text" name="id_product" value="<?php echo $newId?>">
@@ -108,8 +108,9 @@
 		</div>
 
 		<div class="form-group">
-			<label>thumbnail</label>
-			<input class="form-control" type="file" name="product_thumbnail">
+			<img src="http://placehold.it/100x100" id="showgambar" style="max-width:200px;max-height:200px;" /><br/>
+			<label>Thumbnail</label>
+			<input class="form-control" type="file" id="inputgambar" name="product_thumbnail">
 		</div>
 
 		<div class="form-group">
@@ -131,3 +132,21 @@
 	</form>
 
 <?php $this->load->view("admin/_partialsAdmin/footer")?>
+<script type="text/javascript">
+
+function readURL(input) {
+if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+        $('#showgambar').attr('src', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+}
+}
+
+$("#inputgambar").change(function () {
+readURL(this);
+});
+</script>

@@ -1,3 +1,6 @@
+<?php
+$path    = $this->config->item('path');
+?>
 <!DOCTYPE html>
 <html lang="en">
 

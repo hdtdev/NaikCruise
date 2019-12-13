@@ -2,13 +2,23 @@
 
 
 /**
- * 
+ *
  */
 class MProducts extends CI_Model
 {
-	
+
 	public function save($post)
 	{
+		if(!empty($_FILES['product_thumbnail']['name'])){
+				$image_name =  str_replace(' ','_',date('Ymdhis').$_FILES['product_thumbnail']['name']);
+				$config['upload_path']      = $this->config->item('upload_image');
+				$config['allowed_types']    = 'gif|jpg|png';
+				$config['file_name']        = $image_name;
+				$this->upload->initialize($config);
+				$this->upload->do_upload('product_thumbnail');
+		}else{
+				$image_name = '';
+		}
 		$id_product = $this->db->escape($post["id_product"]);
 		$product_name = $this->db->escape($post["product_name"]);
 		$product_code = $this->db->escape($post["product_code"]);
@@ -26,11 +36,11 @@ class MProducts extends CI_Model
 		$product_included = $this->db->escape($post["product_included"]);
 		$product_excluded = $this->db->escape($post["product_excluded"]);
 		$product_terms = $this->db->escape($post["product_terms"]);
-		$product_thumbnail = $this->_uploadImage();
+		$product_thumbnail = $image_name;
 		$product_flyer = $this->db->escape($post["product_flyer"]);
 		$id_status = $this->db->escape($post["id_status"]);
 
-		$sql = $this->db->query("INSERT INTO tb_products VALUES ($id_product, $product_name, $product_code, $position_order, $product_slug, $product_collection, $product_maximum_child_age, $product_highlight_date, $product_total_days, $product_total_nights, $product_starting_price, $product_price_info, $id_ship_list, $product_accomodation, product_included, $product_excluded, $product_terms, '$product_thumbnail', $product_flyer, $id_status)");
+		$sql = $this->db->query("INSERT INTO tb_products VALUES ($id_product, $product_name, $product_code, $position_order, $product_slug, $product_collection, $product_maximum_child_age, $product_highlight_date, $product_total_days, $product_total_nights, $product_starting_price, $product_price_info, $id_ship_list, $product_accomodation, $product_included, $product_excluded, $product_terms, '$product_thumbnail', $product_flyer, $id_status)");
 
 		if($sql){
 			return true;
@@ -38,13 +48,13 @@ class MProducts extends CI_Model
 		return false;
 		}
 	}
- 
+
 	public function getAll()
 	{
 		$this->db->select('tb_products.*, tb_ships_list.*, tb_status.*');
 		$this->db->from('tb_products');
 		$this->db->join('tb_ships_list', 'tb_products.id_ship_list = tb_ships_list.id_ship_list');
-		$this->db->join('tb_status', 'tb_products.id_status = tb_status.id_status');		
+		$this->db->join('tb_status', 'tb_products.id_status = tb_status.id_status');
 		return $this->db->get()->result();
 		// return $this->db->get("tb_products")->result();
 	}
@@ -74,7 +84,7 @@ class MProducts extends CI_Model
 		$this->db->from('tb_products');
 		$this->db->join('tb_ships_list', 'tb_products.id_ship_list = tb_ships_list.id_ship_list');
 		$this->db->join('tb_status', 'tb_products.id_status = tb_status.id_status');
-		$this->db->where('id_product', $id);		
+		$this->db->where('id_product', $id);
 		return $this->db->get()->row();
 		//return $this->db->get_where("tb_products", ["id_product" => $id])->row();
 	}
@@ -133,7 +143,7 @@ class MProducts extends CI_Model
 	        return $this->upload->data("file_name");
 	    }else{
 	    	return "default.jpg";
-	    }	   	   
+	    }
 	}
 
 

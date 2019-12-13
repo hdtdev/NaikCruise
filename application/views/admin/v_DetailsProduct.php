@@ -1,5 +1,5 @@
 <?php $this->load->view("admin/_partialsAdmin/header")?>
-<!-- <?php var_dump($product)?> -->
+<?php/* var_dump($product)*/?>
 
 <div class="container" style="margin-top: 35px;">
   <div class="row">
@@ -170,7 +170,7 @@
         Thumbnail
       </div>
       <div class="col-md-9">
-        <?php echo $product->product_thumbnail?>
+        <img src="<?php echo $this->config->item('path').'/'.$product->product_thumbnail?>" width="100" height="100">
       </div>
     </div>
 
@@ -194,7 +194,7 @@
     <hr>
     <br>
   </section>
-  
+
   <!-- Start Itineraries -->
   <div class="row">
     <div class="col-md-12"><button class="btn btn-dark bg-danger" onclick="itinerariesFunction()" style="width: 100%; background-color: #f0f0f0; padding: 1%; margin-top: 1%;"><strong>ITINERARIES</strong></button>
@@ -304,7 +304,7 @@
 
 <!-- End Image Slider -->
 
-  
+
 
 
 </div>

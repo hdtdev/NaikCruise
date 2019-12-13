@@ -1,12 +1,12 @@
-<?php 
+<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
- 
+
 /**
- * 
+ *
  */
 class Products extends CI_Controller
 {
-	
+
 	function __construct()
 	{
 		parent::__construct();
@@ -22,14 +22,14 @@ class Products extends CI_Controller
 		}else{
 			redirect('admin/user/login');
 		}
-		
+
 	}
 
 	public function add()
 	{
 		if(isset($_POST['submit_product'])){
-			$id_last = $this->input->post("id_product");			
-			$this->MProducts->save($_POST);			
+			$id_last = $this->input->post("id_product");
+			$this->MProducts->save($_POST);
 			redirect("admin/products/lihat/".$id_last);
 		}
 		$data["cruises"] = $this->MProducts->dd_cruise();
@@ -45,7 +45,7 @@ class Products extends CI_Controller
 		}else{
 			redirect("admin/user/login");
 		}
-		
+
 	}
 
 	public function draft()
@@ -61,14 +61,14 @@ class Products extends CI_Controller
 	public function lihat($id)
 	{
 		if ($this->session->userdata('isloggedin')) {
-			$data["product"] = $this->MProducts->getById($id);		
+			$data["product"] = $this->MProducts->getById($id);
 			$data["lihatItinerary"] = $this->MProducts->lihatItinerary($id);
 			$data["lihatImageSlider"] =$this->MProducts->lihatImageSlider($id);
 			$this->load->view("admin/v_DetailsProduct", $data);
 		}else{
 			redirect("admin/user/login");
 		}
-		
+
 	}
 
 	public function update($id)
@@ -76,7 +76,7 @@ class Products extends CI_Controller
 		if (isset($_POST['update_product'])) {
 			$this->MProducts->update($_POST, $id);
 			redirect("admin/products");
-		}		
+		}
 		$data["edit"] = $this->MProducts->getById($id);
 		$data["dd_cruise"] = $this->MProducts->dd_cruise();
 		$this->load->view("admin/v_EditProduct", $data);
@@ -111,7 +111,7 @@ class Products extends CI_Controller
 			$this->MProducts->addItinerary($_POST);
 			redirect("admin/products/lihat/".$last_id);
 		}
-	$this->load->view("admin/v_AddItinerary");	
+	$this->load->view("admin/v_AddItinerary");
 	}
 
 	public function updateItinerary($id_itinerary, $id_product)
