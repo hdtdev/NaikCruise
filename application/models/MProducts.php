@@ -10,15 +10,27 @@ class MProducts extends CI_Model
 	public function save($post)
 	{
 		if(!empty($_FILES['product_thumbnail']['name'])){
-				$image_name =  str_replace(' ','_',date('Ymdhis').$_FILES['product_thumbnail']['name']);
-				$config['upload_path']      = $this->config->item('upload_image');
-				$config['allowed_types']    = 'gif|jpg|png';
-				$config['file_name']        = $image_name;
-				$this->upload->initialize($config);
-				$this->upload->do_upload('product_thumbnail');
-		}else{
-				$image_name = '';
-		}
+	      $image_name =  str_replace(' ','_',date('Ymdhis').$_FILES['product_thumbnail']['name']);
+	      $config['upload_path']      = $this->config->item('upload_image');
+	      $config['allowed_types']    = 'gif|jpg|png';
+	      $config['file_name']        = $image_name;
+	      $this->upload->initialize($config);
+	      $this->upload->do_upload('product_thumbnail');
+	  }else{
+	      $image_name = '';
+	  }
+
+		if(!empty($_FILES['product_flyer']['name'])){
+	      $pdf_name =  str_replace(' ','_',date('Ymdhis').$_FILES['product_flyer']['name']);
+	      $config['upload_path']      = $this->config->item('upload_image');
+	      $config['allowed_types']    = 'pdf';
+	      $config['file_name']        = $pdf_name;
+	      $this->upload->initialize($config);
+	      $this->upload->do_upload('product_flyer');
+	  }else{
+	      $pdf_name = '';
+	  }
+
 		$id_product = $this->db->escape($post["id_product"]);
 		$product_name = $this->db->escape($post["product_name"]);
 		$product_code = $this->db->escape($post["product_code"]);
@@ -37,10 +49,10 @@ class MProducts extends CI_Model
 		$product_excluded = $this->db->escape($post["product_excluded"]);
 		$product_terms = $this->db->escape($post["product_terms"]);
 		$product_thumbnail = $image_name;
-		$product_flyer = $this->db->escape($post["product_flyer"]);
+		$product_flyer = $pdf_name;
 		$id_status = $this->db->escape($post["id_status"]);
 
-		$sql = $this->db->query("INSERT INTO tb_products VALUES ($id_product, $product_name, $product_code, $position_order, $product_slug, $product_collection, $product_maximum_child_age, $product_highlight_date, $product_total_days, $product_total_nights, $product_starting_price, $product_price_info, $id_ship_list, $product_accomodation, $product_included, $product_excluded, $product_terms, '$product_thumbnail', $product_flyer, $id_status)");
+		$sql = $this->db->query("INSERT INTO tb_products VALUES ($id_product, $product_name, $product_code, $position_order, $product_slug, $product_collection, $product_maximum_child_age, $product_highlight_date, $product_total_days, $product_total_nights, $product_starting_price, $product_price_info, $id_ship_list, $product_accomodation, $product_included, $product_excluded, $product_terms, '$product_thumbnail', '$product_flyer', $id_status)");
 
 		if($sql){
 			return true;
@@ -97,6 +109,27 @@ class MProducts extends CI_Model
 
 	public function update($post, $id)
 	{
+		if(!empty($_FILES['product_thumbnail']['name'])){
+	      $image_name =  str_replace(' ','_',date('Ymdhis').$_FILES['product_thumbnail']['name']);
+	      $config['upload_path']      = $this->config->item('upload_image');
+	      $config['allowed_types']    = 'gif|jpg|png';
+	      $config['file_name']        = $image_name;
+	      $this->upload->initialize($config);
+	      $this->upload->do_upload('product_thumbnail');
+	  }else{
+	      $image_name = $this->input->post('old_product_thumbnail');
+	  }
+
+		if(!empty($_FILES['product_flyer']['name'])){
+	      $pdf_name =  str_replace(' ','_',date('Ymdhis').$_FILES['product_flyer']['name']);
+	      $config['upload_path']      = $this->config->item('upload_image');
+	      $config['allowed_types']    = 'pdf';
+	      $config['file_name']        = $pdf_name;
+	      $this->upload->initialize($config);
+	      $this->upload->do_upload('product_flyer');
+	  }else{
+	      $pdf_name = $this->input->post('old_product_flyer');
+	  }
 		$product_name = $this->db->escape($post["product_name"]);
 		$product_code = $this->db->escape($post["product_code"]);
 		$position_order = $this->db->escape($post["position_order"]);
@@ -113,11 +146,11 @@ class MProducts extends CI_Model
 		$product_included = $this->db->escape($post["product_included"]);
 		$product_excluded = $this->db->escape($post["product_excluded"]);
 		$product_terms = $this->db->escape($post["product_terms"]);
-		$product_thumbnail = $this->_uploadImage();
-		$product_flyer = $this->db->escape($post["product_flyer"]);
+		$product_thumbnail = $image_name;
+		$product_flyer = $pdf_name;
 		$id_status = $this->db->escape($post["id_status"]);
 
-		$sql = $this->db->query("UPDATE tb_products SET product_name = $product_name, product_code = $product_code, position_order = $position_order, product_slug = $product_slug, product_collection = $product_collection, product_maximum_child_age = $product_maximum_child_age, product_highlight_date = $product_highlight_date, product_total_days = $product_total_days, product_total_nights = $product_total_nights, product_starting_price = $product_starting_price, product_price_info = $product_price_info, id_ship_list = $id_ship_list, product_accomodation = $product_accomodation, product_included = $product_included, product_excluded = $product_excluded, product_terms = $product_terms, product_thumbnail = '$product_thumbnail', product_flyer = $product_flyer, id_status = $id_status WHERE id_product= ".intval($id));
+		$sql = $this->db->query("UPDATE tb_products SET product_name = $product_name, product_code = $product_code, position_order = $position_order, product_slug = $product_slug, product_collection = $product_collection, product_maximum_child_age = $product_maximum_child_age, product_highlight_date = $product_highlight_date, product_total_days = $product_total_days, product_total_nights = $product_total_nights, product_starting_price = $product_starting_price, product_price_info = $product_price_info, id_ship_list = $id_ship_list, product_accomodation = $product_accomodation, product_included = $product_included, product_excluded = $product_excluded, product_terms = $product_terms, product_thumbnail = '$product_thumbnail', product_flyer = '$product_flyer', id_status = $id_status WHERE id_product= ".intval($id));
 
 		return true;
 	}
@@ -133,7 +166,7 @@ class MProducts extends CI_Model
 	    $config['allowed_types']        = 'gif|jpg|png';
 	    $config['file_name']            = $this->product_id;
 	    $config['overwrite']			= true;
-	    $config['max_size']             = 1024; // 1MB
+	    $config['max_size']             = 0; // 1MB
 	    // $config['max_width']            = 1024;
 	    // $config['max_height']           = 768;
 
@@ -145,7 +178,6 @@ class MProducts extends CI_Model
 	    	return "default.jpg";
 	    }
 	}
-
 
 	public function lihatItinerary($id)
 	{

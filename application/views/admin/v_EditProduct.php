@@ -1,7 +1,7 @@
 <?php $this->load->view("admin/_partialsAdmin/header")?>
-<!-- <?php var_dump($edit)?> -->
+ <?php /* var_dump($edit) */?>
 
-	<form method="post" class="form-horizontal formm">
+	<form method="post" enctype="multipart/form-data" class="form-horizontal formm">
 		<div class="form-group">
 			<label>Name</label>
 			<input class="form-control" type="text" name="product_name" value="<?php echo $edit->product_name?>">
@@ -91,13 +91,21 @@
 		</div>
 
 		<div class="form-group">
-			<label>thumbnail</label>
-			<input class="form-control" type="file" name="product_thumbnail" value="<?php echo $edit->product_thumbnail?>">
+			<?php if (!empty($edit->product_thumbnail)) {?>
+				<img src="<?php echo $this->config->item('path').'/'.$edit->product_thumbnail;?>" id="showgambar" style="max-width:200px;max-height:200px;" /><br/>
+			<?php }else{?>
+				<img src="http://placehold.it/100x100" id="showgambar" style="max-width:200px;max-height:200px;" /><br/>
+			<?php ;} ?>
+			<label>Thumbnail</label>
+			<input class="form-control" type="file" id="inputgambar" name="product_thumbnail">
+			<input class="form-control" type="hidden" name="old_product_thumbnail" value="<?php echo $edit->product_thumbnail ?>">
 		</div>
 
 		<div class="form-group">
-			<label>Flyer</label>
-			<input class="form-control" type="text" name="product_flyer" value="<?php echo $edit->product_flyer?>">
+			<label>Flyer</label><br/>
+      now flyer : <span><?php echo $edit->product_flyer; ?></span>
+			<input class="form-control" type="file" name="product_flyer">
+      <input class="form-control" type="hidden" name="old_product_flyer" value="<?php echo $edit->product_flyer ?>">
 		</div>
 
 		<div class="form-group">
@@ -123,3 +131,21 @@
 	</script>
 
 <?php $this->load->view("admin/_partialsAdmin/footer")?>
+<script type="text/javascript">
+
+function readURL(input) {
+if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+        $('#showgambar').attr('src', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+}
+}
+
+$("#inputgambar").change(function () {
+readURL(this);
+});
+</script>
