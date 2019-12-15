@@ -84,6 +84,13 @@ class Products extends CI_Controller
 
 	public function deleteList($id)
 	{
+		$data = $this->MProducts->getById($id);
+		if (!empty($data->product_thumbnail)){
+			unlink("upload/".$data->product_thumbnail);
+		}
+		if (!empty($data->product_flyer)) {
+			unlink("upload/".$data->product_flyer);
+		}
 		if ($this->MProducts->deleteList($id)) {
 			redirect("admin/products");
 		}
