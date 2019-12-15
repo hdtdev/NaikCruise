@@ -89,6 +89,11 @@
   </script>
 
   <script>
+  CKEDITOR.replace('.ckedtor' ,{
+    filebrowserImageBrowseUrl : 'kcfinder'
+});
+  </script>
+  <script>
       CKEDITOR.replace('editorr', {
         filebrowserUploadUrl: "<?php echo base_url('ckeditor/upload/upload.php')?>",
         filebrowserUploadMethod: 'form'
@@ -122,7 +127,7 @@
       } else {
         x.style.display = "none";
       }
-    } 
+    }
   </script>
 
 </body>

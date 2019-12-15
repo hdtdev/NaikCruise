@@ -3,22 +3,11 @@
  * For licensing, see https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-CKEDITOR.editorConfig = function( config ) {
-	// Define changes to default configuration here. For example:
-	// config.language = 'fr';
-	// config.uiColor = '#AADC6E';
-	
-	// config.filebrowserBrowseUrl = '../kcfinder/browse.php?opener=ckeditor&type=files';
-	// config.filebrowserImageBrowseUrl = '../kcfinder/browse.php?opener=ckeditor&type=images';
-	// config.filebrowserFlashBrowseUrl = '../kcfinder/browse.php?opener=ckeditor&type=flash';
-	// config.filebrowserUploadUrl = '../kcfinder/upload.php?opener=ckeditor&type=files';
-	// config.filebrowserImageUploadUrl = '../kcfinder/upload.php?opener=ckeditor&type=images';
-	// config.filebrowserFlashUploadUrl = '../kcfinder/upload.php?opener=ckeditor&type=flash';
-	// config.filebrowserBrowseUrl = '../kcfinder/browse.php?opener=ckeditor&type=files';
-	// config.filebrowserImageBrowseUrl = '../kcfinder/browse.php?opener=ckeditor&type=images';
-	// config.filebrowserFlashBrowseUrl = '../kcfinder/browse.php?opener=ckeditor&type=flash';
-	// config.filebrowserUploadUrl = '/upload/upload.php';
-	// config.filebrowserImageUploadUrl = '/upload/';
-	// config.filebrowserFlashUploadUrl = '../kcfinder/upload.php?opener=ckeditor&type=flash';
-	// config.extraPlugins = 'image';
+  CKEDITOR.editorConfig = function( config ){
+config.filebrowserBrowseUrl = 'http://localhost/wakuwaku/kcfinder/browse.php?type=files';
+config.filebrowserImageBrowseUrl = 'http://localhost/wakuwaku/kcfinder/browse.php?type=images';
+config.filebrowserFlashBrowseUrl = 'http://localhost/wakuwaku/kcfinder/browse.php?type=flash';
+config.filebrowserUploadUrl = 'http://localhost/wakuwaku/kcfinder/upload.php?type=files';
+config.filebrowserImageUploadUrl = 'http://localhost/wakuwaku/kcfinder/upload.php?type=images';
+config.filebrowserFlashUploadUrl = 'http://localhost/wakuwaku/kcfinder/upload.php?type=flash';
 };
