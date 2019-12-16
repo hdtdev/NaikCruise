@@ -110,7 +110,7 @@
           <a href="#">
             <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
               <div class="member-thumb">
-                <img src="<?php echo $best->product_thumbnail?>" alt="Product Thumbnail" class="img-responsive">
+                <img src="<?php echo site_url('')."upload/". $best->product_thumbnail?>" alt="Product Thumbnail" class="img-responsive">
                 <figcaption class="overlay">                  
                   <h5 style="text-align: left; margin-top: 40%;"><?php echo $best->name_ship_list?></h5>
                   <h5 style="text-align: left"><?php echo $best->product_highlight_date?></h5>

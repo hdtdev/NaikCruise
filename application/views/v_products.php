@@ -17,7 +17,7 @@
           <a href="<?php echo site_url('products/view/'.$all->id_product.'/'.$all->product_slug)?>">
 	          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
 	            <div class="member-thumb">
-	              <img src="<?php echo $all->product_thumbnail?>" alt="Product Thumbnail" class="img-responsive">
+	              <img src="<?php echo site_url('')."upload/". $all->product_thumbnail?>" alt="Product Thumbnail" class="img-responsive">
 	              <figcaption class="overlay">	                
 	                <h5 style="text-align: left; margin-top: 40%;"><?php echo $all->name_ship_list?></h5>
 	                <h5 style="text-align: left"><?php echo $all->product_highlight_date?></h5>

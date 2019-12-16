@@ -28,7 +28,7 @@ $baseUrl .= isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : getenv('HTTP_
 $baseUrl .= str_replace('\\','/', dirname( isset($_SERVER['SCRIPT_NAME']) ? $_SERVER['SCRIPT_NAME'] : getenv('SCRIPT_NAME'))). '/';
 $config['base_url'] = $baseUrl;
 $config['path'] 			      = $config['base_url']."upload/";
-$config['upload_image']		  = 'C:/xampp/htdocs/wakuwaku/upload';
+$config['upload_image']		  = '/opt/lampp/htdocs/wakuwaku/upload';
 
 /*
 |--------------------------------------------------------------------------

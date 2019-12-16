@@ -452,7 +452,7 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="rdropdown-content">
-          <a href="<?php echo site_url('ourships')?>">Our ships</a>
+          <a href="<?php echo site_url('ourShips')?>">Our ships</a>
           <a href="#">Destination</a>
         </div>
       </div>

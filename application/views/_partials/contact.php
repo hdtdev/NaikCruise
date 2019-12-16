@@ -66,7 +66,9 @@
       </div>
       
       <!-- Google map -->
-      <div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div>
+      <div class="wow bounceInDown animated" data-wow-duration="500ms">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4116572504663!2d106.81818401414367!3d-6.2093103955050175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f402f9c7dce5%3A0x63b309b635d75aef!2sMid%20Plaza%202%2C%20Karet%20Tengsin%2C%20Tanahabang%2C%20Kota%20Jakarta%20Pusat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sen!2sid!4v1576464124126!5m2!1sen!2sid" width="100%" height="215px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
       <!-- End Google map -->
       
     </section>

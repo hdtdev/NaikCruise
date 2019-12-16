@@ -1,5 +1,4 @@
 <?php $this->load->view("admin/_partialsAdmin/header")?>
-<?php/* var_dump($product)*/?>
 
 <div class="container" style="margin-top: 35px;">
   <div class="row">
@@ -170,7 +169,7 @@
         Thumbnail
       </div>
       <div class="col-md-9">
-        <img src="<?php echo $this->config->item('path').'/'.$product->product_thumbnail?>" width="100" height="100">
+        <img src="<?php echo $this->config->item('path').$product->product_thumbnail?>" width="100" height="100">
       </div>
     </div>
 

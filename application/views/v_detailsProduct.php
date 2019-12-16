@@ -1,10 +1,4 @@
 <?php $this->load->view("_partials/header")?>
-<!-- <h4>Details Product</h4>
-<?php echo var_dump($viewSlug)?>
-<hr>
-<?php echo var_dump($viewItineraries)?>
-<hr>
-<?php echo var_dump($viewImageSlider)?> -->
 
 	<section id="bestSeller" class="bestSeller ">
       <div class="container">
