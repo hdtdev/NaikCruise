@@ -20,7 +20,7 @@ class MProductsFE extends CI_Model
 		return $sql->result();
 	}
 
-	public function getAll()
+	public function allProducts()
 	{
 		$this->db->select('tb_products.*, tb_ships_list.*');
 		$this->db->from('tb_products');

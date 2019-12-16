@@ -11,7 +11,6 @@ class Products extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->model('MProducts');
-		//$this->load->model('MProducts');
 	}
 
 	public function index()

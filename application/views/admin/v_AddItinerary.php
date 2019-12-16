@@ -3,7 +3,7 @@
 	<!-- ambil parameter dari URI -->
 	<?php $param_id = $this->uri->segment(4) ?>
 
-	<form method="post" class="form-horizontal formm">
+	<form method="post" enctype="multipart/form-data" class="form-horizontal formm">
 		<div class="form-group">
 			<label>ID Product</label>
 			<input class="form-control" type="number" name="id_product" value="<?php echo $param_id?>">
@@ -19,9 +19,10 @@
 			<input class="form-control" type="text" name="name_itinerary" placeholder="Input as the number">
 		</div>
 
-		<div class="form-group">
+		<div class="form-group" style="margin-top: 2%">
 			<label>Image</label>
-			<input class="form-control" type="text" name="img_itinerary" placeholder="Position order is optional">
+			<img src="http://placehold.it/100x100" id="showImgaeItinerary" style="max-width:200px;max-height:200px;"/>
+			<input style="margin-top: 1%" class="form-control" type="file" id="img_itinerary" name="img_itinerary" placeholder="Position order is optional">
 		</div>
 
 		<div class="form-group">
@@ -35,3 +36,22 @@
 	</form>
 
 <?php $this->load->view("admin/_partialsAdmin/footer")?>
+
+<script type="text/javascript">
+
+function readURL(input) {
+if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+        $('#showImgaeItinerary').attr('src', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+}
+}
+
+$("#img_itinerary").change(function () {
+readURL(this);
+});
+</script>
