@@ -263,7 +263,7 @@
     <div class="card mb-3">
       <div class="card-header">
         <i class="fas fa-table"></i>
-        Itineraries Product</div>
+        Image Slider Product</div>
       <div class="card-body">
         <div class="table-responsive">
           <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -282,7 +282,7 @@
               <tr>
                 <td><?php echo $row->id_image_slider_product?></td>
                 <td><?php echo $row->title_image_slider_product?></td>
-                <td><?php echo $row->image_image_slider_product?></td>
+                <td><img src="<?php echo $this->config->item('path').$row->image_image_slider_product?>" width="100" height="100"></td>
                 <td><?php echo $row->position_order_image_slider_product?></td>
                 <td><?php echo $row->id_status?></td>
                 <td width="150" class="text-center">

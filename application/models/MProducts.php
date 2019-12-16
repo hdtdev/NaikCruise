@@ -251,13 +251,25 @@ class MProducts extends CI_Model
 
 	public function addImageSlider($post)
 	{
+		if(!empty($_FILES['image_image_slider_product']['name'])){
+	    	$image_slider =  str_replace(' ','_',date('Ymdhis').$_FILES['image_image_slider_product']['name']);
+	      	$config['upload_path']      = $this->config->item('upload_image');
+	      	$config['allowed_types']    = 'gif|jpg|png';
+	      	$config['file_name']        = $image_slider;
+	      	$this->upload->initialize($config);
+	      	$this->upload->do_upload('image_image_slider_product');
+	  	}else{
+	      	$image_slider = '';
+	  	}
+
+
 		$id_product = $this->db->escape($post["id_product"]);
 		$title_image_slider_product = $this->db->escape($post["title_image_slider_product"]);
-		$image_image_slider_product = $this->db->escape($post["image_image_slider_product"]);
+		$image_image_slider_product = $image_slider;
 		$position_order_image_slider_product = $this->db->escape($post["position_order_image_slider_product"]);
 		$id_status = $this->db->escape($post["id_status"]);
 
-		$sql = $this->db->query("INSERT INTO tb_image_slider_product VALUES (NULL, $id_product, $title_image_slider_product, $image_image_slider_product, $position_order_image_slider_product, $id_status) ");
+		$sql = $this->db->query("INSERT INTO tb_image_slider_product VALUES (NULL, $id_product, $title_image_slider_product, '$image_image_slider_product', $position_order_image_slider_product, $id_status) ");
 
 		if ($sql) {
 			return true;
@@ -269,13 +281,26 @@ class MProducts extends CI_Model
 
 	public function updateImageSlider($post, $id_imageSlider )
 	{
+
+		if(!empty($_FILES['image_image_slider_product']['name'])){
+	      $image_slider =  str_replace(' ','_',date('Ymdhis').$_FILES['image_image_slider_product']['name']);
+	      $config['upload_path']      = $this->config->item('upload_image');
+	      $config['allowed_types']    = 'gif|jpg|png';
+	      $config['file_name']        = $image_slider;
+	      $this->upload->initialize($config);
+	      $this->upload->do_upload('image_image_slider_product');
+	  }else{
+	      $image_slider = $this->input->post('old_img_slider');
+	  }
+
+
 		// $id_product = $this->db->escape($post["id_product"]);
 		$title_image_slider_product = $this->db->escape($post["title_image_slider_product"]);
-		$image_image_slider_product = $this->db->escape($post["image_image_slider_product"]);
+		$image_image_slider_product = $image_slider;
 		$position_order_image_slider_product = $this->db->escape($post["position_order_image_slider_product"]);
 		$id_status = $this->db->escape($post["id_status"]);
 
-		$sql = $this->db->query("UPDATE tb_image_slider_product SET title_image_slider_product = $title_image_slider_product, image_image_slider_product = $image_image_slider_product, position_order_image_slider_product = $position_order_image_slider_product, id_status = $id_status WHERE id_image_slider_product = ".intval($id_imageSlider));
+		$sql = $this->db->query("UPDATE tb_image_slider_product SET title_image_slider_product = $title_image_slider_product, image_image_slider_product = '$image_image_slider_product', position_order_image_slider_product = $position_order_image_slider_product, id_status = $id_status WHERE id_image_slider_product = ".intval($id_imageSlider));
 
 		return true;
 	}

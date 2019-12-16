@@ -4,7 +4,7 @@
 
 	<!-- ambil parameter dari URI -->
 
-	<form method="post" class="form-horizontal formm">
+	<form method="post" enctype="multipart/form-data" class="form-horizontal formm">
 
 		<div class="form-group">
 			<label>Day</label>
