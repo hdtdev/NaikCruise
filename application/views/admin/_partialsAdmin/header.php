@@ -133,11 +133,8 @@ $path    = $this->config->item('path');
           <span>Ships</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <!-- <h6 class="dropdown-header">Products</h6> -->
           <a class="dropdown-item" href="<?php echo site_url('admin/ships/add')?>">Add new</a>
           <a class="dropdown-item" href="<?php echo site_url('admin/ships')?>">All Ships</a>
-          <!-- <a class="dropdown-item" href="#">Published</a>
-          <a class="dropdown-item" href="#">Draft</a> -->
         </div>
       </li>
 

@@ -24,7 +24,8 @@ class MProductsFE extends CI_Model
 	{
 		$this->db->select('tb_products.*, tb_ships_list.*');
 		$this->db->from('tb_products');
-		$this->db->join('tb_ships_list', 'tb_products.id_ship_list = tb_ships_list.id_ship_list');		
+		$this->db->join('tb_ships_list', 'tb_products.id_ship_list = tb_ships_list.id_ship_list');	
+		$this->db->where('id_status', 2);	
 		return $this->db->get()->result();
 	}
 
