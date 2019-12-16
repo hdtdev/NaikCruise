@@ -228,7 +228,7 @@
                       <td><?php echo $row->day_itinerary?></td>
                       <td><?php echo $row->name_itinerary?></td>
                       <td><?php echo $row->note_itinerary?></td>
-                      <td><img src="<?php echo $this->config->item('path').$product->product_thumbnail?>" width="100" height="100"></td>
+                      <td><img src="<?php echo $this->config->item('path').$row->img_itinerary?>" width="100" height="100"></td>
                       <td width="150" class="text-center">
                         <!-- <a href="<?php echo site_url('admin/products/lihat/'.$row->id_itinerary)?>"
                          class="btn btn-small"><i class="fas fa-eye"></i></a> -->

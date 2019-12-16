@@ -223,12 +223,23 @@ class MProducts extends CI_Model
 
 	public function updateItinerary($post, $id_itinerary)
 	{
+		if(!empty($_FILES['img_itinerary']['name'])){
+	      $image_itinerary =  str_replace(' ','_',date('Ymdhis').$_FILES['img_itinerary']['name']);
+	      $config['upload_path']      = $this->config->item('upload_image');
+	      $config['allowed_types']    = 'gif|jpg|png';
+	      $config['file_name']        = $image_itinerary;
+	      $this->upload->initialize($config);
+	      $this->upload->do_upload('img_itinerary');
+	  }else{
+	      $image_itinerary = $this->input->post('old_img_itinerary');
+	  }
+
 		$day_itinerary = $this->db->escape($post["day_itinerary"]);
 		$name_itinerary = $this->db->escape($post["name_itinerary"]);
-		$img_itinerary = $this->db->escape($post["img_itinerary"]);
+		$img_itinerary = $image_itinerary;
 		$note_itinerary = $this->db->escape($post["note_itinerary"]);
 
-		$sql = $this->db->query("UPDATE tb_itinerary SET day_itinerary=$day_itinerary, name_itinerary=$name_itinerary, img_itinerary=$img_itinerary, note_itinerary=$note_itinerary WHERE id_itinerary=".intval($id_itinerary));
+		$sql = $this->db->query("UPDATE tb_itinerary SET day_itinerary=$day_itinerary, name_itinerary=$name_itinerary, img_itinerary='$img_itinerary', note_itinerary=$note_itinerary WHERE id_itinerary=".intval($id_itinerary));
 
 		return true;
 	}

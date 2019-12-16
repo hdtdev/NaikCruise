@@ -2,7 +2,7 @@
 
 <?php $param_id = $this->uri->segment(4) ?>
 
-	<form method="post" class="form-horizontal formm">
+	<form method="post" enctype="multipart/form-data" class="form-horizontal formm">
 		<h3 style="text-align: center;">Insert Image Slider</h3>
 		<div class="form-group">
 			<label>ID Product</label>
@@ -16,7 +16,8 @@
 
 		<div class="form-group">
 			<label>Image</label>
-			<input class="form-control" type="file" name="image_image_slider_product">
+			<img src="http://placehold.it/100x100" id="showImgaeSlider" style="max-width:200px;max-height:200px;"/>
+			<input style="margin-top: 1%" id="img_slider" class="form-control" type="file" name="image_image_slider_product">
 		</div>
 
 		<div class="form-group">
@@ -37,3 +38,22 @@
 		</div>
 	</form>
 <?php $this->load->view("admin/_partialsAdmin/footer")?>
+
+<script type="text/javascript">
+
+function readURL(input) {
+if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+        $('#showImgaeSlider').attr('src', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+}
+}
+
+$("#img_slider").change(function () {
+readURL(this);
+});
+</script>
