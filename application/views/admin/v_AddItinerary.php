@@ -21,7 +21,7 @@
 
 		<div class="form-group" style="margin-top: 2%">
 			<label>Image</label>
-			<img src="http://placehold.it/100x100" id="showImgaeItinerary" style="max-width:200px;max-height:200px;"/>
+			<img src="http://placehold.it/100x100" id="showImageItinerary" style="max-width:200px;max-height:200px;"/>
 			<input style="margin-top: 1%" class="form-control" type="file" id="img_itinerary" name="img_itinerary" placeholder="Position order is optional">
 		</div>
 
@@ -44,7 +44,7 @@ if (input.files && input.files[0]) {
     var reader = new FileReader();
 
     reader.onload = function (e) {
-        $('#showImgaeItinerary').attr('src', e.target.result);
+        $('#showImageItinerary').attr('src', e.target.result);
     }
 
     reader.readAsDataURL(input.files[0]);
