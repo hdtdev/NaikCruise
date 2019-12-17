@@ -103,7 +103,7 @@ $path    = $this->config->item('path');
         </a>
       </li>
 
-      <li class="nav-item <?php echo $this->uri->segment(2) == 'products' && $this->uri->segment(3) == ''? 'active': ''?>">
+      <!-- <li class="nav-item <?php echo $this->uri->segment(2) == 'products' && $this->uri->segment(3) == ''? 'active': ''?>">
         <a class="nav-link" href="<?php echo site_url('admin/products')?>">
           <i class="fa fa-suitcase"></i>
           <span>All Products</span></a>
@@ -125,11 +125,25 @@ $path    = $this->config->item('path');
         <a class="nav-link" href="<?php echo site_url('admin/products/draft')?>">
           <i class="fa fa-clock"></i>
           <span>Draft</span></a>
+      </li> -->
+
+      <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'products' ? 'active': '' ?>">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-drafting-compass"></i>
+          <span>Products</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <!-- <h6 class="dropdown-header">Products</h6> -->
+          <a class="dropdown-item" href="<?php echo site_url('admin/products/add')?>">Add new</a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/products')?>">All Products</a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/products/published')?>">Publish</a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/products/draft')?>">Draft</a>
+        </div>
       </li>
 
       <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'ships' ? 'active': '' ?>">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
+          <i class="fas fa-fw fa-ship"></i>
           <span>Ships</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
@@ -140,7 +154,7 @@ $path    = $this->config->item('path');
 
       <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'blogs' ? 'active': '' ?>">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
+          <i class="fas fa-fw fa-mail-bulk"></i>
           <span>Blogs</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
@@ -155,7 +169,7 @@ $path    = $this->config->item('path');
 
       <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'banner' ? 'active': '' ?>">
         <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-fw fa-folder"></i>
+          <i class="fas fa-fw fa-images"></i>
           <span>Main Banner</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">

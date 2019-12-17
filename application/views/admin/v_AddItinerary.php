@@ -20,7 +20,7 @@
 		</div>
 
 		<div class="form-group" style="margin-top: 2%">
-			<label>Image</label>
+			<label style="width: 100%;">Image</label>
 			<img src="http://placehold.it/100x100" id="showImageItinerary" style="max-width:200px;max-height:200px;"/>
 			<input style="margin-top: 1%" class="form-control" type="file" id="img_itinerary" name="img_itinerary" placeholder="Position order is optional">
 		</div>

@@ -19,7 +19,7 @@
               <tr>
                 <td><?php echo $row->id_ship_list?></td>
                 <td><?php echo $row->name_ship_list?></td>
-                <td><?php echo $row->image_ship_list?></td>
+                <td><img style="max-height: 100px; max-width: 180px" src="<?php echo $this->config->item('path').$row->image_ship_list?>" ></td>
                 <td width="150" class="text-center">
                   <!-- <a href="<?php echo site_url('admin/ships/lihat/'.$row->id_ship_list)?>"
                    class="btn btn-small"><i class="fas fa-eye"></i></a> -->

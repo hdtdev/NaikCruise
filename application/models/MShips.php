@@ -9,8 +9,20 @@ class MShips extends CI_Model
 	
 	public function save($post)
 	{
+
+		if(!empty($_FILES['image_ship_list']['name'])){
+	    	$image_ship =  str_replace(' ','_',date('Ymdhis').$_FILES['image_ship_list']['name']);
+	      	$config['upload_path']      = $this->config->item('upload_image');
+	      	$config['allowed_types']    = 'gif|jpg|png';
+	      	$config['file_name']        = $image_ship;
+	      	$this->upload->initialize($config);
+	      	$this->upload->do_upload('image_ship_list');
+	  	}else{
+	      	$image_ship = '';
+	  	}
+
 		$name_ship_list = $this->db->escape($post["name_ship_list"]);
-		$image_ship_list = $this->db->escape($post["image_ship_list"]);
+		$image_ship_list = $image_ship;
 
 		$sql = $this->db->query("INSERT INTO tb_ships_list VALUES (NULL, $name_ship_list, $image_ship_list)");
 
@@ -28,11 +40,22 @@ class MShips extends CI_Model
 
 	public function update($post, $id)
 	{
+		if(!empty($_FILES['image_ship_list']['name'])){
+	      $image_ship =  str_replace(' ','_',date('Ymdhis').$_FILES['image_ship_list']['name']);
+	      $config['upload_path']      = $this->config->item('upload_image');
+	      $config['allowed_types']    = 'gif|jpg|png';
+	      $config['file_name']        = $image_ship;
+	      $this->upload->initialize($config);
+	      $this->upload->do_upload('image_ship_list');
+	  }else{
+	      $image_ship = $this->input->post('old_img_ship');
+	  }
+
 		$name_ship_list = $this->db->escape($post["name_ship_list"]);
-		$image_ship_list = $this->db->escape($post["image_ship_list"]);
+		$image_ship_list = $image_ship;
 
 
-		$sql = $this->db->query("UPDATE tb_ships_list SET name_ship_list = $name_ship_list, image_ship_list = $image_ship_list WHERE id_ship_list =" .intval($id));
+		$sql = $this->db->query("UPDATE tb_ships_list SET name_ship_list = $name_ship_list, image_ship_list = '$image_ship_list' WHERE id_ship_list =" .intval($id));
 
 		return true;
 	}

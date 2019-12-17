@@ -17,7 +17,7 @@ class Ships extends CI_Controller
 	public function index()
 	{
 		$data["allShips"] = $this->MShips->getAll();
-		$this->load->view("admin/v_ListShips", $data);
+		$this->load->view("admin/ship/v_ListShips", $data);
 	}
 
 	public function add()
@@ -26,7 +26,7 @@ class Ships extends CI_Controller
 			$this->MShips->save($_POST);
 			redirect("admin/ships");
 		}
-		$this->load->view("admin/v_AddShip");
+		$this->load->view("admin/ship/v_AddShip");
 	}
 
 	public function update($id)
@@ -36,7 +36,7 @@ class Ships extends CI_Controller
 			redirect("admin/ships");
 		}
 		$data["editShip"] = $this->MShips->getById($id);
-		$this->load->view("admin/v_EditShip", $data);
+		$this->load->view("admin/ship/v_EditShip", $data);
 	}
 
 	public function delete($id)
