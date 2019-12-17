@@ -85,9 +85,11 @@ class Products extends CI_Controller
 	{
 		$data = $this->MProducts->getById($id);
 		if (!empty($data->product_thumbnail)){
+			chmod("upload".$data->product_thumbnail, 0777);
 			unlink("upload/".$data->product_thumbnail);
 		}
 		if (!empty($data->product_flyer)) {
+			chmod("upload".$data->product_flyer, 0777);
 			unlink("upload/".$data->product_flyer);
 		}
 		if ($this->MProducts->deleteList($id)) {
