@@ -9,7 +9,7 @@
                 <div class="facility-slideshow-container">
                 	<?php foreach ($viewImageSlider as $row):?>              	
 	                    <div class="facility-Slides facility-fade">
-	                      <img class="facility-img" src="<?php echo $row->image_image_slider_product?>" style="width:100%">
+	                      <img class="facility-img" src="<?php echo base_url('upload/'). $row->image_image_slider_product?>" style="width:100%">
 	                      <div class="facility-text"><?php echo $row->title_image_slider_product?></div>
 	                    </div>
 	                <?php endforeach;?>                  
@@ -25,7 +25,7 @@
     </section>
 		
 		<div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms">
-            <h2><?php echo $viewSlug->product_name?></h2>
+            <h1><?php echo $viewSlug->product_name?></h1>
         </div>
 
 	<section class="stnd">		       
@@ -41,7 +41,7 @@
 				  	<?php foreach($viewItineraries as $itin):?>
 				  	<div class="row">
 				  		<div class="col-sm-2" style="display: inline-block;">
-				  			<img src="<?php echo $itin->img_itinerary?>" width="100%">
+				  			<img src="<?php echo base_url('upload/'). $itin->img_itinerary?>" width="100%">
 				  		</div>
 					  	<div class="col-sm-9" style="display: inline-block;">
 					  		<div style="margin-top: 1%">

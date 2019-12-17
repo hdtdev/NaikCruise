@@ -9,7 +9,7 @@
           </div>
           <?php foreach($allFaq as $row):?>
           	<a style="color: #6a737b!important;" href="<?php echo site_url('faq/view/'.$row->id_blog)?>">
-          		<div style="margin-top: 1%; background-color: #e8e8e8; padding: 2%;"><h4><i><?php echo $row->title_blog?></i></h4></div>
+          		<div style="margin-top: 1%; background-color: #f3f3f3; padding: 2%;"><h4 style=" margin-left: 3%;"><i><?php echo $row->title_blog?></i></h4></div>
           	</a>
           <?php endforeach;?>
         </div>

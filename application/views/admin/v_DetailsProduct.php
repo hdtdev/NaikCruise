@@ -282,7 +282,7 @@
               <tr>
                 <td><?php echo $row->id_image_slider_product?></td>
                 <td><?php echo $row->title_image_slider_product?></td>
-                <td><img src="<?php echo $this->config->item('path').$row->image_image_slider_product?>" width="100" height="100"></td>
+                <td><img style="width: 100%; height: 100%; max-width: 200px;" src="<?php echo $this->config->item('path').$row->image_image_slider_product?>"></td>
                 <td><?php echo $row->position_order_image_slider_product?></td>
                 <td><?php echo $row->id_status?></td>
                 <td width="150" class="text-center">
