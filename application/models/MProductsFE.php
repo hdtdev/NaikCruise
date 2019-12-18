@@ -55,7 +55,7 @@ class MProductsFE extends CI_Model
 
 	public function getImageSlider($id)
 	{
-		$sql = $this->db->query("SELECT * FROM tb_image_slider_product WHERE id_product =".intval($id));
+		$sql = $this->db->query("SELECT * FROM tb_image_slider_product WHERE id_product =".intval($id)." AND id_status=2");
 		return $sql->result();
 	}
 
