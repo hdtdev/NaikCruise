@@ -30,13 +30,13 @@
 
 	<section class="stnd">		       
     	<div class="container">
-      		<div class="det-tab">
-				<button id="defaultOpen" class="det-tablinks" onclick="openCity(event, 'itinerary')">Itinerary</button>
-				<button class="det-tablinks" onclick="openCity(event, 'tourDetails')">Tour Details</button>
-				<button class="det-tablinks">Download Flyer</button>
+      		<div class="tabbb">
+				<button id="defaultOpen" class="tablinksss" onclick="openCity(event, 'itinerary')">Itinerary</button>
+				<button class="tablinksss" onclick="openCity(event, 'tourDetails')">Tour Details</button>
+				<button class="tablinksss">Download Flyer</button>
 			</div>
 
-				<div id="itinerary" class="det-tabcontent">
+				<div id="itinerary" class="tabcontenttt">
 					<div style="margin-top: 2%"></div>
 				  	<?php foreach($viewItineraries as $itin):?>
 				  	<div class="row">
@@ -57,7 +57,7 @@
 				  <?php endforeach;?>
 				</div>
 
-				<div id="tourDetails" class="det-tabcontent">
+				<div id="tourDetails" class="tabcontenttt">
 					<div class="row" style="margin-top: 1%">
 						<div class="col-sm-2">Tour Code</div> <div class="col-sm-10"><?php echo $viewSlug->product_code?></div>
 					</div>

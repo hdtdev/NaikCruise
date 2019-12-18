@@ -68,7 +68,7 @@
     <section id="aboutWakuwaku" class="aboutWakuwaku">
       <div class="container">
         <div class="sec-title-dark text-center wow fadeInDownBig" data-wow-duration ="500ms" data-wow-delay="100ms">
-          <h2>About Naik Cruise</h2>
+          <h1>About Naik Cruise</h1>
           <div> </div>
         </div>
         <div class="row">
@@ -98,7 +98,7 @@
         <div class="row">
     
           <div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms">
-            <h2>Best Seller</h2>
+            <h1>Best Seller</h1>
             <!-- <div class="devider-dark"><i class="fa fa-heart-o fa-lg"></i></div> -->
           </div>
           
@@ -256,7 +256,7 @@
         <div class="row">
         
           <div class="sec-title-dark text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
-            <h2>Testimonials</h2>
+            <h1>Testimonials</h1>
           </div>
 
         <div class="tslideshow-container">

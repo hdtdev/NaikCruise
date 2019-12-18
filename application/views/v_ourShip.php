@@ -5,7 +5,7 @@
         <div class="row">
     
           <div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms">
-            <h2>Our Ships</h2>
+            <h1>Our Ships</h1>
             <!-- <div class="devider-dark"><i class="fa fa-heart-o fa-lg"></i></div> -->
           </div>
           
