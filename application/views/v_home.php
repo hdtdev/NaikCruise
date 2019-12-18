@@ -4,60 +4,21 @@
         <!--
         Home Slider
         ==================================== -->
-    
-    <section id="slider">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      
-        <!-- Indicators bullet -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        </ol>
-        <!-- End Indicators bullet -->        
-        
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          
-          <!-- single slide -->
-          <div class="item active" style="background-image: url(img3/banner.jpg);">
-            <div class="carousel-caption">
-              <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Wakuwaku</span>!</h2>
-              <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/let's</span> sailing with us.</h3>
-              <p data-wow-duration="1000ms" class="wow slideInRight animated">Get the best offers</p>
-              
-              <ul class="social-links text-center">
-                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
-              </ul>
+      <section id="slider" class="slider ">
+          <div class="container">
+            <div class="row">          
+            
+              <section style="margin-top: 1%">
+                <div class="row">             
+                    <!-- carousel is here -->
+                    <br>
+
+                </div>
+              </section>                      
             </div>
           </div>
-          <!-- end single slide -->
-          
-          <!-- single slide -->
-          <div class="item" style="background-image: url(img3/banner.jpg);">
-            <div class="carousel-caption">
-              <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Contact us</span>!</h2>
-              <h3 data-wow-duration="500ms" class="wow slideInLeft animated">Ask <span class="color">/Everything</span> to Customer Service.</h3>
-              <p data-wow-duration="500ms" class="wow slideInRight animated">Hope you get the best service</p>
-              
-              <ul class="social-links text-center">
-                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <!-- end single slide -->
-          
-        </div>
-        <!-- End Wrapper for slides -->
-        
-      </div>
-    </section>
-    
+        </section>    
+
         <!--
         End Home SliderEnd
         ==================================== -->
@@ -297,6 +258,8 @@
         <!--
         End Testimonials
         ==================================== -->
+
+        <?php echo var_dump($banner);?>
     
     
 <?php $this->load->view("_partials/contact")?>

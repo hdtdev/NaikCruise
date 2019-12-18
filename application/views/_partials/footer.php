@@ -226,5 +226,7 @@ document.getElementById("defaultOpen").click();
           tdots[tslideIndex-1].className += " tactive";
         }
         </script>
+
+        
     </body>
 </html>

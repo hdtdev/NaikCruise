@@ -43,7 +43,12 @@
     <!-- css dropdown ship -->
         <style type="text/css">
 
+          /*Main banner*/
+          
 
+
+
+          /*Fasilitas slider*/
           .facility-Slides {display: none}
           .facility-img {vertical-align: middle;}
 
