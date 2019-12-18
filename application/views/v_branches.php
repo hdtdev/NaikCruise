@@ -1,11 +1,4 @@
 <?php $this->load->view("_partials/header")?>
-    <!-- Start Video -->
-
-<!--     <div style="margin-top:">
-      <iframe width="100%" height="480" src="https://www.youtube.com/embed/kLL7GOQUmkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div> -->
-
-    <!-- End video -->
 
 <section id="bestSeller" class="bestSeller">
       <div class="container">
@@ -13,17 +6,16 @@
         <div class="row">
     
           <div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms">
-            <h2>Branches</h2>
-            <!-- <div class="devider-dark"><i class="fa fa-heart-o fa-lg"></i></div> -->
+            <h1>BRANCHES</h1>
           </div>
           
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 5%; margin-left: 3%;">
-            <h4><strong>Jakarta Pusat</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>JAKARTA PUSAT</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -33,12 +25,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. Travel Wonderland MidPlaza Branch</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Wonderland MidPlaza Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -48,12 +40,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. Travel Wisma BNI46 Branch</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Wisma BNI46 Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -63,12 +55,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. Travel Premium Plaza Indonesia</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Premium Plaza Indonesia</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -78,7 +70,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL PLAZA INDONESIA</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Plaza Indonesia</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
@@ -94,12 +86,12 @@
         <!-- Jakarta Utara -->
         <div class="row">          
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 3%; margin-left: 3%;">
-            <h4><strong>Jakarta Utara</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>JAKARTA UTARA</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section >
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -109,12 +101,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL MALL KELAPA GADING BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Mall Kelapa Gading Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -124,12 +116,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL LIPPO MALL PLUIT VILLAGE BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Lippo Mall Pluit Village Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -139,7 +131,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL MALL OF INDONESIA BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Mall of Indonesia Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>              
@@ -152,12 +144,12 @@
         <!-- Jakarta Barat -->
         <div class="row">          
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 3%; margin-left: 3%;">
-            <h4><strong>Jakarta Barat</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>JAKARTA BARAT</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -167,12 +159,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL MALL TAMAN ANGGREK BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Mall Taman Anggrek Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -182,7 +174,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL LIPPO MALL PURI</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Lippo Mall Puri</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>            
@@ -195,12 +187,12 @@
         <!-- Jakarta Selatan -->
         <div class="row">          
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 3%; margin-left: 3%;">
-            <h4><strong>Jakarta Selatan</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>JAKARTA SELATAN</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -210,12 +202,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL GANDARIA CITY BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Gandaria City Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -225,7 +217,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL DHARMAWANGSA BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Dharmawangsa Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>            
@@ -238,12 +230,12 @@
         <!-- Tangerang -->
         <div class="row">          
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 3%; margin-left: 3%;">
-            <h4><strong>Tangerang</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>TANGERANG</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -253,12 +245,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL SUMMARECON MALL SERPONG</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Summarecon Mall Serpong</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -268,12 +260,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL BINTARO JAYA XCHANGE BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Bintaro Jaya Xchange Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>  
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -283,7 +275,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL AEON MALL BSD BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Aeon Mall BSD Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>          
@@ -296,12 +288,12 @@
         <!-- Bekasi -->
         <div class="row">          
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 3%; margin-left: 3%;">
-            <h4><strong>Bekasi</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>BEKASI</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -311,7 +303,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL SUMMARECON MALL BEKASI</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Summarecon Mall Bekasi</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>      
@@ -324,12 +316,12 @@
         <!-- Bandung -->
         <div class="row">          
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 3%; margin-left: 3%;">
-            <h4><strong>Bandung</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>BANDUNG</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -339,7 +331,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL BANDUNG BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Bandung Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>        
@@ -352,12 +344,12 @@
         <!-- Surabaya -->
         <div class="row">          
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 3%; margin-left: 3%;">
-            <h4><strong>Surabaya</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>SURABAYA</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -367,12 +359,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL SURABAYA DARMO PERMAI (PAPAYA BRANCH)</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Surabaya Darmo Permai (Papaya Branch)</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -382,12 +374,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL SURABAYA GUBENG BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Surabaya Gubeng Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>  
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -397,7 +389,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>EUROPE SPECIALIST BRANCH</h4>                          
+                          <h5 style="padding: 3%;">Europe Specialist Branch</h5>
                         </figure>
                     <!-- End single member -->
                 </div>          
@@ -411,12 +403,12 @@
         <div class="row">
    
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 5%; margin-left: 3%;">
-            <h4><strong>Bali</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>BALI</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -426,12 +418,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL BEACH WALK SHOPPING CENTER BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Beach Walk Shopping Center Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -441,12 +433,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL RIMBA JIMBARAN BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Rimba Jimbaran Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -456,12 +448,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL SEMINYAK BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Seminyak Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -471,7 +463,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL UBUD BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Ubud Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>            
@@ -485,12 +477,12 @@
         <div class="row">
    
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 5%; margin-left: 3%;">
-            <h4><strong>Cikarang</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>CIKARANG</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -500,12 +492,12 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL CIKARANG BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Cikarang Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>
 
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -515,7 +507,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL MM2100 BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel MM2100 Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>           
@@ -529,12 +521,12 @@
         <div class="row">
    
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 5%; margin-left: 3%;">
-            <h4><strong>Denpasar</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>DENPASAR</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -544,7 +536,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL BALI BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Bali Branch</h5>
                         </figure>
                     <!-- End single member -->
                 </div>         
@@ -558,12 +550,12 @@
         <div class="row">
    
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 5%; margin-left: 3%;">
-            <h4><strong>Depok</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>DEPOK</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -573,7 +565,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL TRANS STUDIO MALL CIBUBUR</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Trans Studio Mall Cibubur</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>         
@@ -587,12 +579,12 @@
         <div class="row">
    
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 5%; margin-left: 3%;">
-            <h4><strong>Karawang</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>KARAWANG</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -602,7 +594,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL SURYACIPTA</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Suryacipta</h5>
                         </figure>
                     <!-- End single member -->
                 </div>         
@@ -616,12 +608,12 @@
         <div class="row">
    
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 5%; margin-left: 3%;">
-            <h4><strong>Labuan Bajo</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>LABUAN BAJO</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -631,7 +623,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>MAIMAI TOURIST INFORMATION KOMODO (H.I.S. KOMODO BRANCH)</h4>                          
+                          <h5 style="padding: 3%;">Miami Tourist Information Komodo (H.I.S. Komodo Branch)</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>         
@@ -645,12 +637,12 @@
         <div class="row">
    
           <div class="sec-title-dark wow fadeInRight animated" data-wow-duration="500ms" style="margin-top: 5%; margin-left: 3%;">
-            <h4><strong>Yogyakarta</strong></h4>
+            <h4 style="margin-left: 3%;"><strong>YOGYAKARTA</strong></h4>
           </div>
         
-          <section style="margin-top: 2%">
+          <section>
             <div class="row">
-                <div class="col-md-3">
+                <div style="margin-top: 3%" class="col-md-3">
                     <!-- single member -->
                         <figure class="team-member text-center wow fadeInUp animated" data-wow-duration="500ms">
                           <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
@@ -660,7 +652,7 @@
                                 <button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
                             </figcaption>
                           </div>
-                          <h4>H.I.S. TRAVEL JOGJAKARTA BRANCH</h4>                          
+                          <h5 style="padding: 3%;">H.I.S. Travel Jogjakarta Branch</h5>                          
                         </figure>
                     <!-- End single member -->
                 </div>         
