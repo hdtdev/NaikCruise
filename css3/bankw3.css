@@ -1,7 +1,8 @@
 
 /* Style the tab */
 .det-tab {
-  overflow: hidden;
+  overflow: auto;
+  white-space: nowrap;
   border: 1px solid #ccc;
   background-color: #e8e8e8;
 }
@@ -9,14 +10,18 @@
 /* Style the buttons inside the tab */
 .det-tab button {
   background-color: inherit;
-  float: left;
+  display: inline-block;
+  cursor: pointer;
   border: none;
   outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
+  padding-left: 5%;
   transition: 0.3s;
   font-size: 17px;
 }
+
+/*float: left;
+  
+  */
 
 /* Change background color of buttons on hover */
 .det-tab button:hover {

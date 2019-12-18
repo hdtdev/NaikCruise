@@ -15,11 +15,11 @@
 		
           <section style="margin-top: 5%">
           	<div class="row">
-          		<div class="det-tab">
-					<button id="defaultOpen" class="det-tablinks" onclick="openCity(event, 'dreamCruise')">Dream Cruise</button>
-					<button class="det-tablinks" onclick="openCity(event, 'royalCaribbeanCruise')">Royal Caribbean Cruise</button>
-					<button class="det-tablinks" onclick="openCity(event, 'costaCruise')">Costa Cruise</button>
-					<button class="det-tablinks" onclick="openCity(event, 'norwegianCruise')">Norwegian Cruise</button>
+          		<div class="scrollmenuu det-tab">
+					<button style="font-size: 1.0em!important;" id="defaultOpen" class="det-tablinks" onclick="openCity(event, 'dreamCruise')">Dream Cruise</button>
+					<button style="font-size: 1.0em!important;" class="det-tablinks" onclick="openCity(event, 'royalCaribbeanCruise')">Royal Caribbean Cruise</button>
+					<button style="font-size: 1.0em!important;" class="det-tablinks" onclick="openCity(event, 'costaCruise')">Costa Cruise</button>
+					<button style="font-size: 1.0em!important;" class="det-tablinks" onclick="openCity(event, 'norwegianCruise')">Norwegian Cruise</button>
 				</div>
 
 				<div id="dreamCruise" class="det-tabcontent">						

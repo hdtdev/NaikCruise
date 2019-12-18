@@ -408,6 +408,19 @@
                 text-align: left;
               }
             }
+
+            div.scrollmenuu {
+              overflow: auto;
+              white-space: nowrap;
+            }
+
+            div.scrollmenuu button {
+              display: inline-block;
+              text-align: center;
+              padding: 14px;
+              text-decoration: none;
+            }
+
             
           /*End menu navbar responsive css*/
           </style>
