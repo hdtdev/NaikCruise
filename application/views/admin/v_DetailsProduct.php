@@ -178,7 +178,7 @@
         Flyer
       </div>
       <div class="col-md-9">
-        <?php echo $product->product_flyer?>
+        <a href="<?php echo $this->config->item('path').$product->product_flyer?>" target="_blank"><?php echo $product->product_flyer?></a>
       </div>
     </div>
 
