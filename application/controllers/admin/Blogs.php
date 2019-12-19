@@ -39,7 +39,7 @@ class Blogs extends CI_Controller
 		$data["dd_status"] = $this->MBlog->dd_status();
 		$data["dd_category"] = $this->MBlog->dd_category();
 		$data["getData"] = $this->MBlog->getById($id);
-		$this->load->view("admin/v_editBlog", $data);
+		$this->load->view("admin/v_EditBlog", $data);
 	}
 }
 ?>

@@ -21,7 +21,7 @@
           <!-- single slide -->
           <div class="item active" style="background-image: url(img3/banner.jpg);">
             <div class="carousel-caption">
-              <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Wakuwaku</span>!</h2>
+              <h1 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Wakuwaku</span>!</h1>
               <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/let's</span> sailing with us.</h3>
               <p data-wow-duration="1000ms" class="wow slideInRight animated">Get the best offers</p>
               
@@ -38,7 +38,7 @@
           <!-- single slide -->
           <div class="item" style="background-image: url(img3/banner.jpg);">
             <div class="carousel-caption">
-              <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Contact us</span>!</h2>
+              <h1 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Contact us</span>!</h1>
               <h3 data-wow-duration="500ms" class="wow slideInLeft animated">Ask <span class="color">/Everything</span> to Customer Service.</h3>
               <p data-wow-duration="500ms" class="wow slideInRight animated">Hope you get the best service</p>
               
@@ -68,7 +68,7 @@
     <section id="aboutWakuwaku" class="aboutWakuwaku">
       <div class="container">
         <div class="sec-title-dark text-center wow fadeInDownBig" data-wow-duration ="500ms" data-wow-delay="100ms">
-          <h2>About Naik Cruise</h2>
+          <h1>About Naik Cruise</h1>
           <div> </div>
         </div>
         <div class="row">
@@ -98,7 +98,7 @@
         <div class="row">
     
           <div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms">
-            <h2>Best Seller</h2>
+            <h1>Best Seller</h1>
             <!-- <div class="devider-dark"><i class="fa fa-heart-o fa-lg"></i></div> -->
           </div>
           
@@ -256,7 +256,7 @@
         <div class="row">
         
           <div class="sec-title-dark text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
-            <h2>Testimonials</h2>
+            <h1>Testimonials</h1>
           </div>
 
         <div class="tslideshow-container">

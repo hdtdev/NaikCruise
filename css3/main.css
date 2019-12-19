@@ -724,13 +724,15 @@ top: -8px;
 
 .contact-address h3 {
   color: white;
-  font-size: 2.20px;
+  font-weight: bold;
+  font-size: 20px;
   line-height: 32px;
   margin-bottom: 25px;
 }
 
 .contact-address p {
   color: white;
+  font-size: 1.0em;
   line-height: 24px;
 }
 

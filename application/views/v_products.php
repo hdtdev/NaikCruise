@@ -8,7 +8,7 @@
         <div class="row">
     
           <div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms" style="margin-bottom: 2.5%">
-            <h2>Products</h2>
+            <h1>Products</h1>
             <!-- <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div> -->
           </div>
           
