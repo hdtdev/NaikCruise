@@ -21,7 +21,7 @@
           <!-- single slide -->
           <div class="item active" style="background-image: url(img3/banner.jpg);">
             <div class="carousel-caption">
-              <h1 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Wakuwaku</span>!</h1>
+              <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Wakuwaku</span>!</h2>
               <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/let's</span> sailing with us.</h3>
               <p data-wow-duration="1000ms" class="wow slideInRight animated">Get the best offers</p>
               
@@ -42,12 +42,6 @@
               <h3 data-wow-duration="500ms" class="wow slideInLeft animated">Ask <span class="color">/Everything</span> to Customer Service.</h3>
               <p data-wow-duration="500ms" class="wow slideInRight animated">Hope you get the best service</p>
               
-              <ul class="social-links text-center">
-                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
-              </ul>
             </div>
           </div>
           <!-- end single slide -->
