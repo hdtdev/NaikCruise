@@ -33,7 +33,7 @@
       		<div class="det-tab">
 				<button id="defaultOpen" class="det-tablinks" onclick="openCity(event, 'itinerary')">Itinerary</button>
 				<button class="det-tablinks" onclick="openCity(event, 'tourDetails')">Tour Details</button>
-				<button class="det-tablinks">Download Flyer</button>
+				<button class="det-tablinks" onclick="openCity(event, 'pdfTab')">Flyer</button>
 			</div>
 
 				<div id="itinerary" class="det-tabcontent">
@@ -98,7 +98,10 @@
 						<div class="col-sm-2">Terms & Condition</div> <div class="col-sm-10"><?php echo $viewSlug->product_terms?></div>
 				  	</div>
 				  	<hr>
+				</div>
 
+				<div id="pdfTab" class="det-tabcontent" style="min-height: 450px;">
+					<iframe height="450" width="100%" src="<?php echo base_url('upload/').$viewSlug->product_flyer?>"></iframe>
 				</div>
 
       	</div>
