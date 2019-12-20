@@ -101,7 +101,7 @@
 				</div>
 
 				<div id="pdfTab" class="det-tabcontent" style="min-height: 450px;">
-					<iframe height="450" width="100%" src="<?php echo base_url('upload/').$viewSlug->product_flyer?>"></iframe>
+					<iframe height="500" width="100%" src="<?php echo base_url('upload/').$viewSlug->product_flyer?>"></iframe>
 				</div>
 
       	</div>
