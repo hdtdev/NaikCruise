@@ -1,13 +1,12 @@
 <?php $this->load->view("_partials/header")?>
-<!-- <h3>Test</h3>
-<?php echo var_dump($destination);?> -->
+<!-- <?php echo var_dump($destination);?> -->
 	<section class="bestSeller">
 		<div class="container">
 			<div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms">
             	<h1>Destination</h1>
           	</div>
 
-	        <div class="row">
+	        <div style="margin-top: 5%" class="row">
 	        	<?php foreach($destination as $row):?>
 	            <div style="margin-top: 3%" class="col-md-3">
 	                <!-- single member -->
@@ -19,7 +18,7 @@
 	                            <button class="btn btn-all btn-block" style="margin-top: 80%"><b>Details</b></button>
 	                        </figcaption>
 	                      </div>
-	                      <h5 style="padding: 3%;"><?php echo $row->title_blog?></h5>                          
+	                      <h4 style="padding: 3%;"><b> <?php echo $row->title_blog?> </b></h4>                          
 	                    </figure>
 	                <!-- End single member -->
 	            </div>

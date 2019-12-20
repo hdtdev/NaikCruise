@@ -39,7 +39,7 @@ class MBlog extends CI_Model
 		$id_status = $this->db->escape($post["id_status"]);
 		$image_blog = $img_blog;
 
-		$sql = $this->db->query("INSERT INTO tb_blogs VALUES (NULL, $slug_blog, $title_blog, $content_blog, $id_category, $id_status, '$image_blog')");
+		$sql = $this->db->query("INSERT INTO tb_blogs VALUES (NULL, $title_blog, $slug_blog, $content_blog, $id_category, $id_status, '$image_blog')");
 
 		if($sql){
 			return true;
