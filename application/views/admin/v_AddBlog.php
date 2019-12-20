@@ -1,5 +1,6 @@
 <?php $this->load->view("admin/_partialsAdmin/header")?>
-<form method="post" class="form-horizontal formm">
+
+<form method="post" enctype="multipart/form-data" class="form-horizontal formm">
 
 		<div class="form-group">
 			<label>Title</label>
@@ -9,7 +10,6 @@
 		<div class="form-group">
 			<label>Content</label>
 			<textarea class="ckeditor" id="ckedtor" name="content_blog"></textarea>
-			<!-- <input class="form-control" type="text" name="product_terms" placeholder="Input as the number" value="">-->
 		</div>
 
 		<div class="form-group">
@@ -36,8 +36,33 @@
 			</select>
 		</div>
 
+		<div class="form-group">
+			<label>Thumbnail</label>
+			<img src="http://placehold.it/100x100" id="showImgaeBlog" style="max-width:200px;max-height:200px;"/>
+			<input style="margin-top: 1%" id="inputImageBlog" class="form-control" type="file" name="image_blog">
+		</div>
+
 		<div class="text-center">
 			<button name="submit_blog" class="btn btn-primary">Save</button>
 		</div>
 	</form>
 <?php $this->load->view("admin/_partialsAdmin/footer")?>
+
+<script type="text/javascript">
+
+function readURL(input) {
+if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+        $('#showImgaeBlog').attr('src', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+}
+}
+
+$("#inputImageBlog").change(function () {
+readURL(this);
+});
+</script>
