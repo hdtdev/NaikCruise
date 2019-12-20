@@ -93,7 +93,6 @@
     
           <div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms">
             <h1>Best Seller</h1>
-            <!-- <div class="devider-dark"><i class="fa fa-heart-o fa-lg"></i></div> -->
           </div>
           
           <div class="sec-sub-title-dark text-center wow fadeInRight animated" data-wow-duration="500ms">

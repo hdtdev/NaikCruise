@@ -33,12 +33,13 @@ class MBlog extends CI_Model
 	  	}
 
 		$title_blog = $this->db->escape($post["title_blog"]);
+		$slug_blog = $this->db->escape($post["slug_blog"]);
 		$content_blog = $this->db->escape($post["content_blog"]);
 		$id_category = $this->db->escape($post["id_category"]);
 		$id_status = $this->db->escape($post["id_status"]);
 		$image_blog = $img_blog;
 
-		$sql = $this->db->query("INSERT INTO tb_blogs VALUES (NULL, $title_blog, $content_blog, $id_category, $id_status, '$image_blog')");
+		$sql = $this->db->query("INSERT INTO tb_blogs VALUES (NULL, $slug_blog, $title_blog, $content_blog, $id_category, $id_status, '$image_blog')");
 
 		if($sql){
 			return true;
@@ -76,12 +77,13 @@ class MBlog extends CI_Model
 	  }
 
 		$title_blog = $this->db->escape($post["title_blog"]);
+		$slug_blog = $this->db->escape($post["slug_blog"]);
 		$content_blog = $this->db->escape($post["content_blog"]);
 		$id_category = $this->db->escape($post["id_category"]);
 		$id_status = $this->db->escape($post["id_status"]);
 		$image_blog = $img_blog;
 
-		$sql = $this->db->query("UPDATE tb_blogs SET title_blog = $title_blog, content_blog = $content_blog, id_category = $id_category, id_status = $id_status, image_blog='$image_blog' WHERE id_blog= ".intval($id));
+		$sql = $this->db->query("UPDATE tb_blogs SET title_blog = $title_blog, slug_blog = $slug_blog, content_blog = $content_blog, id_category = $id_category, id_status = $id_status, image_blog='$image_blog' WHERE id_blog= ".intval($id));
 		return true;
 	}
 

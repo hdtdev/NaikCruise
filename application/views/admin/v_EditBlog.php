@@ -8,6 +8,11 @@
 		</div>
 
 		<div class="form-group">
+			<label>Slug</label>
+			<input class="form-control" type="text" name="slug_blog" value="<?php echo $getData->slug_blog?>">
+		</div>
+
+		<div class="form-group">
 			<label>Content</label>
 			<textarea class="ckeditor" id="ckedtor" name="content_blog"><?php echo $getData->content_blog?></textarea>			
 		</div>

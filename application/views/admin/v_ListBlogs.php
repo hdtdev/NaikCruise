@@ -11,6 +11,7 @@
             <tr>
               <th class="text-center">ID</th>
               <th class="text-center">Title</th>
+              <th class="text-center">Slug</th>
               <th class="text-center">Category</th>
               <th class="text-center">Status</th>
               <th class="text-center">Action</th>
@@ -21,6 +22,7 @@
             <tr>
               <td><?php echo $row->id_blog?></td>
               <td><?php echo $row->title_blog?></td>
+              <td><?php echo $row->slug_blog?></td>
               <td><?php echo $row->name_category?></td>
               <td><?php echo $row->name_status?></td>                                        
               <td width="150" class="text-center">                 
