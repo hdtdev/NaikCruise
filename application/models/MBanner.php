@@ -42,7 +42,8 @@ class MBanner extends CI_Model
 	{
 		$this->db->select('tb_main_banner.*, tb_status.*');
 		$this->db->from('tb_main_banner');
-		$this->db->join('tb_status', 'tb_main_banner.id_status = tb_status.id_status');		
+		$this->db->join('tb_status', 'tb_main_banner.id_status = tb_status.id_status');
+		// $this->db->where('id_status', 2);		
 		return $this->db->get()->result();
 	}
 
