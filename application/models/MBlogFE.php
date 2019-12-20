@@ -31,5 +31,11 @@ class MBlogFE extends CI_Model
 		return $sql->row();
 	}
 
+	public function destination()
+	{
+		$sql=$this->db->query("SELECT * FROM tb_blogs WHERE id_category=4 AND id_status=2");
+		return $sql->result();
+	}
+
 }
 ?>
