@@ -60,6 +60,12 @@ class MHomeFE extends CI_Model
 		$sql = $this->db->query("SELECT * FROM tb_blogs WHERE id_category=5 AND id_status=2");
 		return $sql->result();
 	}
+
+	public function getMainBanner()
+	{
+		$sql = $this->db->query("SELECT * FROM tb_main_banner WHERE id_status=2 ORDER BY position_main_banner ASC");
+		return $sql->result();
+	}
 }
 
 

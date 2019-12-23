@@ -13,6 +13,7 @@ class Home extends CI_Controller {
 	{
 		$data["testimonials"] = $this->MHomeFE->testimonials();
 		$data["bestSeller"] = $this->MHomeFE->bestSeller();
+		$data["mainBanner"] = $this->MHomeFE->getMainBanner();
 		$this->load->view('v_home', $data);
 	}
 }

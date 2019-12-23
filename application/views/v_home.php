@@ -1,9 +1,25 @@
 <?php $this->load->view("_partials/header")?>
-  
-<!-- <?php var_dump($bestSeller)?> -->
+
         <!--
         Home Slider
         ==================================== -->
+
+    <section id="slider">
+      <div class="slideshow-containerm">
+        <?php foreach($mainBanner as $main):?>
+          <div class="mySlidesm fadem">
+            <img class="imgm" src="<?php echo base_url('upload/').$main->image_main_banner?>" style="width:100%">
+            <div class="textm"><?php echo $main->caption_main_banner?></div>
+          </div>
+        <?php endforeach;?>
+
+        <a class="prevm" onclick="plusSlidesm(-1)">&#10094;</a>
+        <a class="nextm" onclick="plusSlidesm(1)">&#10095;</a>
+
+        </div>
+
+      
+    </section>
     
     <section id="slider">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -130,116 +146,7 @@
         <!--
         End Best Seller
         ==================================== -->
-    
-        <!--
-        Our Works
-        ==================================== -->
- <!--    
-    <section id="works" class="works clearfix">
-      <div class="container">
-        <div class="row">
-        
-          <div class="sec-title text-center">
-            <h2>Works</h2>
-            <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-          </div>
-          
-          <div class="sec-sub-title text-center">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-          </div>
-          
-          <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
-            <ul class="text-center">
-              <li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
-              <li><a href="javascript:;" data-filter=".branding" class="filter">Branding</a></li>
-              <li><a href="javascript:;" data-filter=".web" class="filter">web</a></li>
-              <li><a href="javascript:;" data-filter=".logo-design" class="filter">logo design</a></li>
-              <li><a href="javascript:;" data-filter=".photography" class="filter">photography</a></li>
-            </ul>
-          </div>
-          
-        </div>
-      </div>
-      
-      <div class="project-wrapper">
-      
-        <figure class="mix work-item branding">
-          <img src="img3/works/item-1.jpg" alt="">
-          <figcaption class="overlay">
-            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-1.jpg"><i class="fa fa-eye fa-lg"></i></a>
-            <h4>Labore et dolore magnam</h4>
-            <p>Photography</p>
-          </figcaption>
-        </figure>
-        
-        <figure class="mix work-item web">
-          <img src="img3/works/item-2.jpg" alt="">
-          <figcaption class="overlay">
-            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-2.jpg"><i class="fa fa-eye fa-lg"></i></a>
-            <h4>Labore et dolore magnam</h4>
-            <p>Photography</p>
-          </figcaption>
-        </figure>
-        
-        <figure class="mix work-item logo-design">
-          <img src="img3/works/item-3.jpg" alt="">
-          <figcaption class="overlay">
-            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-3.jpg"><i class="fa fa-eye fa-lg"></i></a>
-            <h4>Labore et dolore magnam</h4>
-            <p>Photography</p>
-          </figcaption>
-        </figure>
-        
-        <figure class="mix work-item photography">
-          <img src="img3/works/item-4.jpg" alt="">
-          <figcaption class="overlay">
-            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-4.jpg"><i class="fa fa-eye fa-lg"></i></a>
-            <h4>Labore et dolore magnam</h4>
-            <p>Photography</p>
-          </figcaption>
-        </figure>
-      
-        <figure class="mix work-item branding">
-          <img src="img3/works/item-5.jpg" alt="">
-          <figcaption class="overlay">
-            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-5.jpg"><i class="fa fa-eye fa-lg"></i></a>
-            <h4>Labore et dolore magnam</h4>
-            <p>Photography</p>
-          </figcaption>
-        </figure>
-        
-        <figure class="mix work-item web">
-          <img src="img3/works/item-6.jpg" alt="">
-          <figcaption class="overlay">
-            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-6.jpg"><i class="fa fa-eye fa-lg"></i></a>
-            <h4>Labore et dolore magnam</h4>
-            <p>Photography</p>
-          </figcaption>
-        </figure>
-        
-        <figure class="mix work-item logo-design">
-          <img src="img3/works/item-7.jpg" alt="">
-          <figcaption class="overlay">
-            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-7.jpg"><i class="fa fa-eye fa-lg"></i></a>
-            <h4>Labore et dolore magnam</h4>
-            <p>Photography</p>
-          </figcaption>
-        </figure>
-        
-        <figure class="mix work-item photography">
-          <img src="img3/works/item-8.jpg" alt="">
-          <figcaption class="overlay">
-            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-8.jpg"><i class="fa fa-eye fa-lg"></i></a>
-            <h4>Labore et dolore magnam</h4>
-            <p>Photography</p>
-          </figcaption>
-        </figure>
-        
-      </div>
-    
-
-    </section>
-  -->   
+  
   <!--
         Testimonials
         ==================================== -->
@@ -262,28 +169,10 @@
             </div>
           <?php endforeach;?>
 
-<!--           <div class="tmySlides">
-            <img style="width: 20%; min-width: 180px; height: 20%;border-radius: 100%;" src="<?php echo base_url('img3/girl1.jpg')?>"><br>
-              <p class="tauthor" style="margin-top: 5%"><b>Siti Juleha</b></p>
-              <p style="margin-top: 2%"><i>"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."</i> </p>    
-          </div>
-
-          <div class="tmySlides">
-            <img style="width: 20%; min-width: 180px; height: 20%;border-radius: 100%;" src="<?php echo base_url('img3/man2.jpg')?>"><br>
-              <p class="tauthor" style="margin-top: 5%"><b>Subagyo Arkabi</b></p>
-              <p style="margin-top: 2%"><i>"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."</i> </p>    
-          </div> -->
-
           <a class="tprev" onclick="tplusSlides(-1)">❮</a>
           <a class="tnext" onclick="tplusSlides(1)">❯</a>
 
           </div>
-
-<!--           <div class="tdot-container">
-            <span class="tdot" onclick="tcurrentSlide(1)"></span> 
-            <span class="tdot" onclick="tcurrentSlide(2)"></span> 
-            <span class="tdot" onclick="tcurrentSlide(3)"></span> 
-          </div> -->
             
         </div>
       </div>
@@ -292,7 +181,33 @@
         <!--
         End Testimonials
         ==================================== -->
-    
+
+
+    <!-- Script main banner -->
+    <script>
+      var slideIndexm = 1;
+      showSlidesm(slideIndexm);
+
+      function plusSlidesm(n) {
+        showSlidesm(slideIndexm += n);
+      }
+
+      function currentSlidem(n) {
+        showSlidesm(slideIndexm = n);
+      }
+
+      function showSlidesm(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlidesm");
+        if (n > slides.length) {slideIndexm = 1}    
+        if (n < 1) {slideIndexm = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slides[slideIndexm-1].style.display = "block";  
+      }
+    </script>
+
     
 <?php $this->load->view("_partials/contact")?>
 <?php $this->load->view("_partials/footer")?>
