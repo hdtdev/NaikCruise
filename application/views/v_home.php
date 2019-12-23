@@ -253,14 +253,16 @@
           </div>
 
         <div class="tslideshow-container">
+          <?php foreach($testimonials as $testi):?>
 
-          <div class="tmySlides">       
-              <img style="width: 20%; min-width: 180px; height: 20%;border-radius: 100%;" src="<?php echo base_url('img3/man1.jpg')?>"><br>
-              <p class="tauthor" style="margin-top: 5%"><b>Ernest Hemingway</b></p>
-              <p style="margin-top: 2%"><i>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</i> </p>              
-          </div>
+            <div class="tmySlides">       
+                <img style="width: 20%; min-width: 180px; height: 20%;border-radius: 100%;" src="<?php echo base_url('upload/').$testi->image_blog;?>"><br>
+                <p class="tauthor" style="margin-top: 5%"><b><?php echo $testi->title_blog?> </b></p>
+                <p style="margin-top: 2%"><i><?php echo $testi->content_blog?></i> </p>              
+            </div>
+          <?php endforeach;?>
 
-          <div class="tmySlides">
+<!--           <div class="tmySlides">
             <img style="width: 20%; min-width: 180px; height: 20%;border-radius: 100%;" src="<?php echo base_url('img3/girl1.jpg')?>"><br>
               <p class="tauthor" style="margin-top: 5%"><b>Siti Juleha</b></p>
               <p style="margin-top: 2%"><i>"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."</i> </p>    
@@ -270,18 +272,18 @@
             <img style="width: 20%; min-width: 180px; height: 20%;border-radius: 100%;" src="<?php echo base_url('img3/man2.jpg')?>"><br>
               <p class="tauthor" style="margin-top: 5%"><b>Subagyo Arkabi</b></p>
               <p style="margin-top: 2%"><i>"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."</i> </p>    
-          </div>
+          </div> -->
 
           <a class="tprev" onclick="tplusSlides(-1)">❮</a>
           <a class="tnext" onclick="tplusSlides(1)">❯</a>
 
           </div>
 
-          <div class="tdot-container">
+<!--           <div class="tdot-container">
             <span class="tdot" onclick="tcurrentSlide(1)"></span> 
             <span class="tdot" onclick="tcurrentSlide(2)"></span> 
             <span class="tdot" onclick="tcurrentSlide(3)"></span> 
-          </div>
+          </div> -->
             
         </div>
       </div>

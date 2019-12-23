@@ -10,13 +10,13 @@ class Products extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model("MProductsFE");
+		$this->load->model("MHomeFE");
 
 	}
 
 	public function index()
 	{
-		$data["allProducts"] = $this->MProductsFE->allProducts();
+		$data["allProducts"] = $this->MHomeFE->allProducts();
 		$this->load->view("v_products", $data);
 
 	}
@@ -24,9 +24,9 @@ class Products extends CI_Controller
 	// details product
 	public function view($id, $slug)
 	{
-		$data["viewSlug"] = $this->MProductsFE->getBySlug($slug);
-		$data["viewItineraries"] = $this->MProductsFE->getItineraries($id);
-		$data["viewImageSlider"] = $this->MProductsFE->getImageSlider($id);
+		$data["viewSlug"] = $this->MHomeFE->getBySlug($slug);
+		$data["viewItineraries"] = $this->MHomeFE->getItineraries($id);
+		$data["viewImageSlider"] = $this->MHomeFE->getImageSlider($id);
  		$this->load->view("v_detailsProduct", $data);
 	}
 }
