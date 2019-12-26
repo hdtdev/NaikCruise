@@ -136,6 +136,7 @@ body > section,
 .sec-title-dark {}
 
 .sec-title-dark h1 {
+  margin-top: 3%;
   color: #333;
   font-size: 28px;
   font-weight: 800;

@@ -66,30 +66,30 @@
     ================================================== -->
 
     <!-- Main jQuery -->
-        <script src="js3/jquery-1.11.1.min.js"></script>
+        <script src="<?php echo base_url('js3/jquery-1.11.1.min.js')?>"></script>
     <!-- Single Page Nav -->
-        <script src="js3/jquery.singlePageNav.min.js"></script>
+        <script src="<?php echo base_url('js3/jquery.singlePageNav.min.js')?>"></script>
     <!-- Twitter Bootstrap -->
-        <script src="js3/bootstrap.min.js"></script>
+        <script src="<?php echo base_url('js3/bootstrap.min.js')?>"></script>
     <!-- jquery.fancybox.pack -->
-        <script src="js3/jquery.fancybox.pack.js"></script>
+        <script src="<?php echo base_url('js3/jquery.fancybox.pack.js')?>"></script>
     <!-- jquery.mixitup.min -->
-        <script src="js3/jquery.mixitup.min.js"></script>
+        <script src="<?php echo base_url('js3/jquery.mixitup.min.js')?>"></script>
     <!-- jquery.parallax -->
-        <script src="js3/jquery.parallax-1.1.3.js"></script>
+        <script src="<?php echo base_url('js3/jquery.parallax-1.1.3.js')?>"></script>
     <!-- jquery.countTo -->
-        <script src="js3/jquery-countTo.js"></script>
+        <script src="<?php echo base_url('js3/jquery-countTo.js')?>"></script>
     <!-- jquery.appear -->
-        <script src="js3/jquery.appear.js"></script>
+        <script src="<?php echo base_url('js3/jquery.appear.js')?>"></script>
     <!-- Contact form validation -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.11.1/jquery.validate.min.js"></script>
     <!-- Google Map -->
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
     <!-- jquery easing -->
-        <script src="js3/jquery.easing.min.js"></script>
+        <script src="<?php echo base_url('js3/jquery.easing.min.js')?>"></script>
     <!-- jquery easing -->
-        <script src="js3/wow.min.js"></script>
+        <script src="<?php echo base_url('js3/wow.min.js')?>"></script>
     
 
     <!-- Navbar Responsive script -->
