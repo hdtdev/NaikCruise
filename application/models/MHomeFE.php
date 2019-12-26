@@ -66,6 +66,30 @@ class MHomeFE extends CI_Model
 		$sql = $this->db->query("SELECT * FROM tb_main_banner WHERE id_status=2 ORDER BY position_main_banner ASC");
 		return $sql->result();
 	}
+	
+	public function listDream()
+	{
+		$sql = $this->db->query("SELECT * FROM tb_ships_list WHERE id_brands = 2 AND id_status=2");
+		return $sql->result();
+	}
+
+	public function listRoyal()
+	{
+		$sql = $this->db->query("SELECT * FROM tb_ships_list WHERE id_brands = 3 AND id_status =2");
+		return $sql->result();
+	}
+
+	public function listCosta()
+	{
+		$sql = $this->db->query("SELECT * FROM tb_ships_list WHERE id_brands = 1 AND id_status =2");
+		return $sql->result();
+	}
+
+	public function listNorwegian()
+	{
+		$sql = $this->db->query("SELECT * FROM tb_ships_list WHERE id_brands = 4 AND id_status =2");
+		return $sql->result();
+	}
 }
 
 

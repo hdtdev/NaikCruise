@@ -13,11 +13,15 @@ class OurShips extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view("v_ourShip");
+		$data["listDream"] = $this->MHomeFE->listDream();
+		$data["listRoyal"] = $this->MHomeFE->listRoyal();
+		$data["listCosta"] = $this->MHomeFE->listCosta();
+		$data["listNorwegian"] = $this->MHomeFE->listNorwegian();
+		$this->load->view("v_ourShip", $data);
 	}
 
 	public function costaneoromantica($ship)
-	{
+	{		
 		$data["ship"] = $this->MHomeFE->getProductByShip($ship);
 		$this->load->view("costaCruise/costaneoromantica", $data);
 	}

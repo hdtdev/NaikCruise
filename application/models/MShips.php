@@ -82,7 +82,7 @@ class MShips extends CI_Model
 	{
 		$sql = $this->db->query("SELECT * FROM tb_brands");
 		return $sql->result();
-	}
+	}	
 
 
 }
