@@ -50,7 +50,6 @@
 
           /* Slideshow container */
           .slideshow-containerm {
-            max-width: 1000px;
             position: relative;
             margin: auto;
           }
@@ -74,6 +73,13 @@
           /* Position the "next button" to the right */
           .nextm {
             right: 0;
+            background-color: rgba(50, 115, 220, 0.7);
+            border-radius: 3px 0 0 3px;
+          }
+
+          .prevm {
+            
+            background-color: rgba(50, 115, 220, 0.7);
             border-radius: 3px 0 0 3px;
           }
 
@@ -85,10 +91,11 @@
           /* Caption text */
           .textm {
             color: #f2f2f2;
-            font-size: 15px;
+            font-size: 65px;
+            font-weight: 600;
             padding: 8px 12px;
             position: absolute;
-            bottom: 8px;
+            bottom: 10%;
             width: 100%;
             text-align: center;
           }
@@ -541,7 +548,7 @@
         </button>
         <div class="rdropdown-content">
           <a href="<?php echo site_url('ourShips')?>">Our ships</a>
-          <a href="#">Destination</a>
+          <a href="<?php echo site_url('destination')?>">Destination</a>
         </div>
       </div>
       
