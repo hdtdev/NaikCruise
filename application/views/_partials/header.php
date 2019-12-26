@@ -78,7 +78,6 @@
           }
 
           .prevm {
-            
             background-color: rgba(50, 115, 220, 0.7);
             border-radius: 3px 0 0 3px;
           }

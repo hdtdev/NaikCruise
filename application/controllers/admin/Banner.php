@@ -14,27 +14,42 @@ class Banner extends CI_Controller
 
 	public function index()
 	{
-		$data["allBanner"] = $this->MBanner->getAll();
-		$this->load->view("admin/mainBanner/v_ListMainBanner", $data);
+		if ($this->session->userdata('isloggedin')) {
+			$data["allBanner"] = $this->MBanner->getAll();
+			$this->load->view("admin/mainBanner/v_ListMainBanner", $data);	
+		}else{
+			redirect("admin/user/login");
+		}
 	}
 
 	public function add()
 	{
+		if ($this->session->userdata('isloggedin')) {
+			$this->load->view("admin/mainBanner/v_addMainBanner");
+		}else{
+			redirect("admin/user/login");
+		}
+
 		if(isset($_POST['submit_main_banner'])){
 			$this->MBanner->save($_POST);
 			redirect("admin/banner");
-		}
-		$this->load->view("admin/mainBanner/v_addMainBanner");
+		}		
 	}
 
 	public function update($id)
 	{
+		if ($this->session->userdata('isloggedin')) {
+			$data["updateBanner"] = $this->MBanner->getById($id);
+			$this->load->view("admin/mainBanner/v_updateMainBanner", $data);
+		}else{
+			redirect("admin/user/login");
+		}
+
 		if (isset($_POST['update_banner'])) {
 			$this->MBanner->update($_POST, $id);
 			redirect("admin/banner");
 		}
-		$data["updateBanner"] = $this->MBanner->getById($id);
-		$this->load->view("admin/mainBanner/v_updateMainBanner", $data);
+
 	}
 
 	public function deleteBanner()

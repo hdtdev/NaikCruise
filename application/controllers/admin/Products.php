@@ -26,14 +26,20 @@ class Products extends CI_Controller
 
 	public function add()
 	{
+		if ($this->session->userdata('isloggedin')) {
+			$data["cruises"] = $this->MProducts->dd_cruise();
+			$data["lastId"] = $this->MProducts->getLastId();
+			$this->load->view("admin/v_AddProduct", $data);
+		}else{
+			redirect("admin/user/login");
+		}
+		
 		if(isset($_POST['submit_product'])){
 			$id_last = $this->input->post("id_product");
 			$this->MProducts->save($_POST);
 			redirect("admin/products/lihat/".$id_last);
 		}
-		$data["cruises"] = $this->MProducts->dd_cruise();
-		$data["lastId"] = $this->MProducts->getLastId();
-		$this->load->view("admin/v_AddProduct", $data);
+		
 	}
 
 	public function published()
@@ -72,13 +78,18 @@ class Products extends CI_Controller
 
 	public function update($id)
 	{
+		if ($this->session->userdata('isloggedin')) {
+			$data["edit"] = $this->MProducts->getById($id);
+			$data["dd_cruise"] = $this->MProducts->dd_cruise();
+			$this->load->view("admin/v_EditProduct", $data);
+		}else{
+			redirect("admin/user/login");
+		}
+
 		if (isset($_POST['update_product'])) {
 			$this->MProducts->update($_POST, $id);
 			redirect("admin/products");
-		}
-		$data["edit"] = $this->MProducts->getById($id);
-		$data["dd_cruise"] = $this->MProducts->dd_cruise();
-		$this->load->view("admin/v_EditProduct", $data);
+		}		
 	}
 
 	public function deleteList($id)
