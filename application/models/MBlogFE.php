@@ -37,5 +37,11 @@ class MBlogFE extends CI_Model
 		return $sql->result();
 	}
 
+	public function viewDestination($slug)
+	{
+		$sql = $this->db->query("SELECT * FROM tb_blogs WHERE id_category=4 AND id_status=2 AND slug_blog='$slug'");
+		return $sql->row();
+	}
+
 }
 ?>

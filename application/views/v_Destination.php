@@ -15,7 +15,7 @@
 	                        <img src="<?php echo base_url('')."upload/". $row->image_blog?>" class="img-responsive">
 	                        <figcaption class="overlay" style="border-radius: 15px;">                                     
 	                            <!-- <p style="margin-top: 40%">.</p>                         -->
-	                            <button class="btn btn-all btn-block" style="margin-top: 80%"><b>Details</b></button>
+	                            <a href="<?php echo site_url('destination/view/').$row->slug_blog?>"><button class="btn btn-all btn-block" style="margin-top: 80%"><b>Details</b></button></a>
 	                        </figcaption>
 	                      </div>
 	                      <h4 style="padding: 3%;"><b> <?php echo $row->title_blog?> </b></h4>                          

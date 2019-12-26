@@ -17,6 +17,12 @@ class Destination extends CI_Controller
 		$data["destination"] = $this->MBlogFE->destination();
 		$this->load->view("v_Destination", $data);
 	}
+
+	public function view($slug)
+	{
+		$data["detailsDestination"] = $this->MBlogFE->viewDestination($slug);
+		$this->load->view("v_DetailsDestination", $data);
+	}
 }
 
 ?>

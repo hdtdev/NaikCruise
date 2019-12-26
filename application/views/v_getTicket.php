@@ -1,13 +1,15 @@
 <?php $this->load->view("_partials/header")?>
 
-<div class="text-center" style="margin-top: 5%;"><h1><strong><?php echo $getTicket->title_blog ?></strong></h1></div>
+	<section class="bestSeller">
+		<div class="container">
+			<div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms">
+            	<h1><?php echo $getTicket->title_blog ?></h1>
+          	</div>
 
-<hr style="margin-top: 5%">
-
-<section>
-	<div class="container">
-		<div class="text-justify"><p><?php echo $getTicket->content_blog ?></p></div>
-	</div>	
-</section>
+	        <div style="margin-top: 5%" class="row">
+	        	<div class="text-justify"><p><?php echo $getTicket->content_blog ?></p></div>
+	        </div>
+        </div>
+    </section>
 
 <?php $this->load->view("_partials/footer")?>
