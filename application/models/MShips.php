@@ -22,9 +22,13 @@ class MShips extends CI_Model
 	  	}
 
 		$name_ship_list = $this->db->escape($post["name_ship_list"]);
+		$slug_ship_list = $this->db->escape($post["slug_ship_list"]);		
 		$image_ship_list = $image_ship;
+		$content_ship_list = $this->db->escape($post["content_ship_list"]);
+		$id_brands = $this->db->escape($post["id_brands"]);
+		$id_status = $this->db->escape($post["id_status"]);
 
-		$sql = $this->db->query("INSERT INTO tb_ships_list VALUES (NULL, $name_ship_list, $image_ship_list)");
+		$sql = $this->db->query("INSERT INTO tb_ships_list VALUES (NULL, $name_ship_list, $slug_ship_list, $image_ship_list, $content_ship_list, $id_brands, $id_status)");
 
 		if($sql){
 			return true;
@@ -52,10 +56,14 @@ class MShips extends CI_Model
 	  }
 
 		$name_ship_list = $this->db->escape($post["name_ship_list"]);
+		$slug_ship_list = $this->db->escape($post["slug_ship_list"]);		
 		$image_ship_list = $image_ship;
+		$content_ship_list = $this->db->escape($post["content_ship_list"]);
+		$id_brands = $this->db->escape($post["id_brands"]);
+		$id_status = $this->db->escape($post["id_status"]);
 
 
-		$sql = $this->db->query("UPDATE tb_ships_list SET name_ship_list = $name_ship_list, image_ship_list = '$image_ship_list' WHERE id_ship_list =" .intval($id));
+		$sql = $this->db->query("UPDATE tb_ships_list SET name_ship_list = $name_ship_list, slug_ship_list=$slug_ship_list, image_ship_list = '$image_ship_list', content_ship_list=$content_ship_list, id_brands=$id_brands, id_status=$id_status WHERE id_ship_list =" .intval($id));
 
 		return true;
 	}
@@ -69,5 +77,13 @@ class MShips extends CI_Model
 	{
 		return $this->db->delete("tb_ships_list", array("id_ship_list"=>$id));
 	}
+
+	public function ddBrands()
+	{
+		$sql = $this->db->query("SELECT * FROM tb_brands");
+		return $sql->result();
+	}
+
+
 }
 ?>

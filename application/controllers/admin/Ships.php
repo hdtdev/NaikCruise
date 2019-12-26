@@ -29,7 +29,8 @@ class Ships extends CI_Controller
 	public function add()
 	{
 		if ($this->session->userdata('isloggedin')) {
-			$this->load->view("admin/ship/v_AddShip");
+			$data["ddBrands"] = $this->MShips->ddBrands();
+			$this->load->view("admin/ship/v_AddShip", $data);
 		}else{
 			redirect('admin/user/login');
 		}
@@ -43,6 +44,7 @@ class Ships extends CI_Controller
 	public function update($id)
 	{
 		if ($this->session->userdata('isloggedin')) {
+			$data["ddBrands"] = $this->MShips->ddBrands();
 			$data["editShip"] = $this->MShips->getById($id);
 			$this->load->view("admin/ship/v_EditShip", $data);
 		}else{
@@ -64,5 +66,6 @@ class Ships extends CI_Controller
 			redirect('admin/user/login');
 		}		
 	}
+
 }
 ?>
