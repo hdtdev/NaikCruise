@@ -1,13 +1,13 @@
 <?php $this->load->view("_partials/header")?>
 
-<!-- <?php echo var_dump($listDream)?>
+<?php echo var_dump($listDream)?>
 <hr>
 <?php echo var_dump($listRoyal)?>
 <hr>
 <?php echo var_dump($listCosta)?>
 <hr>
 <?php echo var_dump($listNorwegian)?>
-<hr> -->
+<hr> 
 
 <section id="bestSeller" class="bestSeller">
       <div class="container">
