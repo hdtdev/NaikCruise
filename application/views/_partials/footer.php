@@ -1,5 +1,6 @@
-    
-    
+      <a href="https://api.whatsapp.com/send?phone=6281391403439">
+        <img  class="floattt" src="<?php echo base_url('img3/whatsapp.png')?>" class="my-floattt">
+      </a>    
     <footer id="footer" class="footer">
       <div class="container">
         <div class="row">

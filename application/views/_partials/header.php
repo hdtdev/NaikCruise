@@ -503,8 +503,26 @@
                 text-align: left;
               }
             }
-            
           /*End menu navbar responsive css*/
+
+          .floattt{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+            font-size:30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index:100;
+          }
+
+          .my-floattt{
+            margin-top:16px;
+          }
           </style>
         <!-- Bootstrap css -->
 
@@ -568,5 +586,7 @@
       <a href="<?php echo site_url('faq')?>" class="<?php echo $this->uri->segment(1)== 'faq'? 'ractive': ''?>">FAQ</a>
       
       <a href="javascript:void(0);" style="font-size:15px;" class="ricon" onclick="myFunction()">&#9776;</a>
+
+      
     </div>
     <!-- End Navbar -->
