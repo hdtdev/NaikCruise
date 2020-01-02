@@ -20,12 +20,6 @@ class OurShips extends CI_Controller
 		$this->load->view("v_ourShip", $data);
 	}
 
-	// public function costaneoromantica($ship)
-	// {		
-	// 	$data["ship"] = $this->MHomeFE->getProductByShip($ship);
-	// 	$this->load->view("costaCruise/costaneoromantica", $data);
-	// }
-
 	public function view($slug)
 	{
 		$data["detailsShip"] = $this->MHomeFE->getDetailsShip($slug);

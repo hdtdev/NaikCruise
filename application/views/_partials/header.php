@@ -91,12 +91,13 @@
           .textm {
             color: #f2f2f2;
             font-size: 65px;
-            font-weight: 600;
+            font-weight: 800;
             padding: 8px 12px;
             position: absolute;
             bottom: 10%;
             width: 100%;
             text-align: center;
+            text-shadow: 2px 2px 14px #000000;
           }
 
           /* Number text (1/3 etc) */
