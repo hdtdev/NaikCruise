@@ -1,13 +1,13 @@
 <?php $this->load->view("_partials/header")?>
 
-<?php echo var_dump($listDream)?>
+<!-- <?php echo var_dump($listDream)?>
 <hr>
 <?php echo var_dump($listRoyal)?>
 <hr>
 <?php echo var_dump($listCosta)?>
 <hr>
 <?php echo var_dump($listNorwegian)?>
-<hr> 
+<hr>  -->
 
 <section id="bestSeller" class="bestSeller">
       <div class="container">
@@ -15,7 +15,6 @@
     
           <div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms">
             <h1>Our Ships</h1>
-            <!-- <div class="devider-dark"><i class="fa fa-heart-o fa-lg"></i></div> -->
           </div>
           
           <div class="sec-title-dark text-center wow fadeInRight animated" data-wow-duration="500ms">
@@ -34,14 +33,17 @@
 				<div id="dreamCruise" class="det-tabcontent">						
 					<div class="container" style="padding: 3%">
 				        <div class="row">
-				          	<a href="#" style="color: #575757!important;">
-				          		<div class="col-sm-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-				            		<img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
-				            		<div class="text-center"><h4><b>Genting Dream</b></h4></div>
-				          		</div>
-				        	</a> 
+				        	<h4>dream</h4>
+				        	<?php foreach($listDream as $dream):?>
+					          	<a href="<?php echo site_url('OurShips/view/'.$dream->slug_ship_list)?>" style="color: #575757!important;">
+					          		<div class="col-sm-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+					            		<img src="<?php echo base_url('upload/').$dream->image_ship_list?>" style="width: 100%; height: 100%;">
+					            		<div class="text-center"><h4><b><?php echo $dream->name_ship_list?></b></h4></div>
+					          		</div>
+					        	</a> 
+				        	<?php endforeach;?>
 
-				        	<a href="#" style="color: #575757!important;">
+				        	<!-- <a href="#" style="color: #575757!important;">
 					          <div class="col-sm-3 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
 					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
 					            <div class="text-center"><h4><b>World Dream</b></h4></div>
@@ -60,7 +62,7 @@
 					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
 					            <div class="text-center"><h4><b>Global Dream</b></h4></div>
 					          </div>
-				          	</a>				        
+				          	</a>	 -->			        
 				      	</div>
 				    </div>		  
 				</div>
@@ -68,7 +70,16 @@
 				<div id="royalCaribbeanCruise" class="det-tabcontent">
 					<div class="container" style="padding: 3%">
 				        <div class="row">
-				        	<a href="#" style="color: #575757!important;">
+				        	<h4>Royal</h4>
+				        	<?php foreach($listRoyal as $royal):?>
+					          	<a href="#" style="color: #575757!important;">
+					          		<div class="col-sm-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+					            		<img src="<?php echo base_url('upload/').$royal->image_ship_list?>" style="width: 100%; height: 100%;">
+					            		<div class="text-center"><h4><b><?php echo $royal->name_ship_list?></b></h4></div>
+					          		</div>
+					        	</a> 
+				        	<?php endforeach;?>
+				        	<!-- <a href="#" style="color: #575757!important;">
 					          <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
 					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
 					            <div class="text-center"><h4><b>Voyager Of The Seas</b></h4></div>
@@ -80,7 +91,7 @@
 					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
 					            <div class="text-center"><h4><b>Quantum Of The Seas</b></h4></div>
 					          </div>
-				          	</a>				        
+				          	</a> -->				        
 				      	</div>
 				    </div>				  
 				</div>
@@ -88,7 +99,16 @@
 				<div id="costaCruise" class="det-tabcontent">
 					<div class="container" style="padding: 3%">
 				        <div class="row">
-				        	<a href="#" style="color: #575757!important;">
+				        	<h4>costa</h4>
+				        	<?php foreach($listCosta as $costa):?>
+					          	<a href="#" style="color: #575757!important;">
+					          		<div class="col-sm-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+					            		<img src="<?php echo base_url('upload/').$costa->image_ship_list?>" style="width: 100%; height: 100%;">
+					            		<div class="text-center"><h4><b><?php echo $costa->name_ship_list?></b></h4></div>
+					          		</div>
+					        	</a> 
+				        	<?php endforeach;?>
+				        	<!-- <a href="#" style="color: #575757!important;">
 					          <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
 					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
 					            <div class="text-center"><h4><b>Costa Fortuna Cruise</b></h4></div>
@@ -100,7 +120,7 @@
 					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
 					            <div class="text-center"><h4><b>Costa Neo Romantica</b></h4></div>
 					          </div>
-				          	</a>				        
+				          	</a> -->				        
 				      	</div>
 				    </div>				  
 				</div>
@@ -108,12 +128,21 @@
 				<div id="norwegianCruise" class="det-tabcontent">
 					<div class="container" style="padding: 3%">
 				        <div class="row">
-				        	<a href="#" style="color: #575757!important;">
+				        	<h4>norwegian</h4>
+				        	<?php foreach($listNorwegian as $norwegian):?>
+					          	<a href="#" style="color: #575757!important;">
+					          		<div class="col-sm-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+					            		<img src="<?php echo base_url('upload/').$norwegian->image_ship_list?>" style="width: 100%; height: 100%;">
+					            		<div class="text-center"><h4><b><?php echo $norwegian->name_ship_list?></b></h4></div>
+					          		</div>
+					        	</a> 
+				        	<?php endforeach;?>
+				        	<!-- <a href="#" style="color: #575757!important;">
 					          <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
 					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
 					            <div class="text-center"><h4><b>Norwegian Jade Cruise</b></h4></div>
 					          </div>
-				      		</a>
+				      		</a> -->
 				      	</div>
 				    </div>				  
 				</div>

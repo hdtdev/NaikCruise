@@ -1,5 +1,4 @@
 <?php $this->load->view("admin/_partialsAdmin/header")?>
-<!-- <?php echo var_dump($editShip)?> -->
 <form method="post" enctype="multipart/form-data" class="form-horizontal formm">
 		<h3 style="text-align: center;">Edit Ship</h3>
 		<div class="form-group">

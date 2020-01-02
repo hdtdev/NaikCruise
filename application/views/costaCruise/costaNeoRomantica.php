@@ -4,55 +4,46 @@
     <section id="bestSeller" class="bestSeller ">
       <div class="container">
         <div class="row">
-    
-          <div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms">
-            <h2>Costa Neo Romantica</h2>
-            <!-- <div class="devider-dark"><i class="fa fa-heart-o fa-lg"></i></div> -->
-          </div>
-          
-          <div class="sec-title-dark text-center wow fadeInRight animated" data-wow-duration="500ms">
-            <p>Lorem ipsum lorem ipsum lorem ipsum</p>
-          </div>
 
           <section style="margin-top: 5%">
             <div class="row">
-                <div class="row wow fadeInRight animated" data-wow-duration="100ms" style="background-color: #f0f0f0; margin-top: 5px;">
+                <div class="row wow fadeInRight animated" data-wow-duration="400ms" style="background-color: #f0f0f0; margin-top: 5px;">
                     <div class="col-md-1 list-ship-info"><h4>icon</h4></div>
                     <div class="col-md-9 list-ship-info"><h4>Ship Class</h4></div>
                     <div class="col-md-2 list-ship-info text-right"><h4>Premium Class</h4></div>
                 </div>
 
-                <div class="row wow fadeInRight animated" data-wow-duration="350ms" data-wow-delay="900ms" style="background-color: #f0f0f0; margin-top: 5px;">
+                <div class="row wow fadeInRight animated" data-wow-duration="450ms" data-wow-delay="900ms" style="background-color: #f0f0f0; margin-top: 5px;">
                     <div class="col-md-1 list-ship-info"><h4>icon</h4></div>
                     <div class="col-md-9 list-ship-info"><h4>Passenger Capacity</h4></div>
                     <div class="col-md-2 list-ship-info text-right"><h4>13.543</h4></div>
                 </div>
 
-                <div class="row wow fadeInRight animated" data-wow-duration="400ms" data-wow-delay="900ms" style="background-color: #f0f0f0; margin-top: 5px;">
+                <div class="row wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="900ms" style="background-color: #f0f0f0; margin-top: 5px;">
                     <div class="col-md-1 list-ship-info"><h4>icon</h4></div>
                     <div class="col-md-9 list-ship-info"><h4>Year Built</h4></div>
                     <div class="col-md-2 list-ship-info text-right"><h4>2002</h4></div>
                 </div>
 
-                <div class="row wow fadeInRight animated" data-wow-duration="450ms" data-wow-delay="900ms" style="background-color: #f0f0f0; margin-top: 5px;">
+                <div class="row wow fadeInRight animated" data-wow-duration="550ms" data-wow-delay="900ms" style="background-color: #f0f0f0; margin-top: 5px;">
                     <div class="col-md-1 list-ship-info"><h4>icon</h4></div>
                     <div class="col-md-9 list-ship-info"><h4>Gross Tonnage</h4></div>
                     <div class="col-md-2 list-ship-info text-right"><h4>16.780</h4></div>
                 </div>
 
-                <div class="row wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="900ms" style="background-color: #f0f0f0; margin-top: 5px;">
+                <div class="row wow fadeInRight animated" data-wow-duration="600ms" data-wow-delay="900ms" style="background-color: #f0f0f0; margin-top: 5px;">
                     <div class="col-md-1 list-ship-info"><h4>icon</h4></div>
                     <div class="col-md-9 list-ship-info"><h4>Decks</h4></div>
                     <div class="col-md-2 list-ship-info text-right"><h4>16</h4></div>
                 </div>
 
-                <div class="row wow fadeInRight animated" data-wow-duration="550ms" data-wow-delay="900ms" style="background-color: #f0f0f0; margin-top: 5px;">
+                <div class="row wow fadeInRight animated" data-wow-duration="650ms" data-wow-delay="900ms" style="background-color: #f0f0f0; margin-top: 5px;">
                     <div class="col-md-1 list-ship-info"><h4>icon</h4></div>
                     <div class="col-md-9 list-ship-info"><h4>Cabins</h4></div>
                     <div class="col-md-2 list-ship-info text-right"><h4>57</h4></div>
                 </div> 
 
-                <div class="row wow fadeInRight animated" data-wow-duration="900ms" data-wow-delay="900ms" style="background-color: #f0f0f0; margin-top: 5px;">
+                <div class="row wow fadeInRight animated" data-wow-duration="700ms" data-wow-delay="900ms" style="background-color: #f0f0f0; margin-top: 5px;">
                     <div class="col-md-1 list-ship-info"><h4>icon</h4></div>
                     <div class="col-md-9 list-ship-info"><h4>Number of Crews</h4></div>
                     <div class="col-md-2 list-ship-info text-right"><h4>13.243</h4></div>
@@ -79,19 +70,19 @@
                     <div class="cabins-slideshow-container">
                         <div class="cabins-Slides cabins-fade">
                           <div class="cabins-numbertext">1 / 3</div>
-                          <img class="cabins-img" src="<?php echo base_url('img3/contoh.png')?>" style="width:100%">
+                          <img class="cabins-img" src="<?php echo base_url('/wakuwaku/kcfinder/upload/images/img_sampel.png')?>" style="width:100%">
                           <div class="cabins-text">Caption Text</div>
                         </div>
 
                         <div class="cabins-Slides cabins-fade">
                           <div class="cabins-numbertext">2 / 3</div>
-                          <img class="cabins-img" src="<?php echo base_url('img3/contoh.png')?>" style="width:100%">
+                          <img class="cabins-img" src="<?php echo base_url('/wakuwaku/kcfinder/upload/images/img_sampel.png')?>" style="width:100%">
                           <div class="cabins-text">Caption Two</div>
                         </div>
 
                         <div class="cabins-Slides cabins-fade">
                           <div class="cabins-numbertext">3 / 3</div>
-                          <img class="cabins-img" src="<?php echo base_url('img3/contoh.png')?>" style="width:100%">
+                          <img class="cabins-img" src="<?php echo base_url('/wakuwaku/kcfinder/upload/images/img_sampel.png')?>" style="width:100%">
                           <div class="cabins-text">Caption Three</div>
                         </div>
 
