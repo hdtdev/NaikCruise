@@ -511,17 +511,12 @@
             height:60px;
             bottom:40px;
             right:40px;
-            
             color:#FFF;
-            border-radius:50px;
+            border-radius:5px;
             text-align:center;
             font-size:30px;
-            box-shadow: 2px 2px 3px #999;
+            
             z-index:100;
-          }
-
-          .my-floattt{
-            margin-top:16px;
           }
           </style>
         <!-- Bootstrap css -->
@@ -560,15 +555,8 @@
     
     <div class="rtopnav" id="rmyTopnav">
       <a href="<?php echo site_url('')?>" class="<?php echo $this->uri->segment(1)== ''? 'ractive': ''?>" >Home</a>
-      <div class="rdropdown">
-        <button class="rdropbtn">Plans 
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="rdropdown-content">
-          <a href="<?php echo site_url('OurShips')?>">Our ships</a>
-          <a href="<?php echo site_url('destination')?>">Destination</a>
-        </div>
-      </div>
+
+      <a href="<?php echo site_url('OurShips')?>" class="<?php echo $this->uri->segment(1)== 'OurShips'? 'ractive': ''?>">Our ships</a>
       
       <a href="<?php echo site_url('products')?>" class="<?php echo $this->uri->segment(1)== 'products'? 'ractive': ''?>">Products</a>
       
@@ -579,10 +567,11 @@
         <div class="rdropdown-content">
           <a href="<?php echo site_url('howto/getticket')?>">Get a ticket</a>
           <a href="<?php echo site_url('howto/boardingday')?>">Boarding Day</a>
+          <a href="<?php echo site_url('howto/alreadyBooked')?>">Already Booked</a>
+          <a href="<?php echo site_url('howto/packingChecklist')?>">Packing Checklist</a>
         </div>
       </div>
       <a href="<?php echo site_url('branches')?>" class="<?php echo $this->uri->segment(1)== 'branches'? 'ractive': ''?>">Branches</a>
-      <a href="#">About</a>
       <a href="<?php echo site_url('faq')?>" class="<?php echo $this->uri->segment(1)== 'faq'? 'ractive': ''?>">FAQ</a>
       
       <a href="javascript:void(0);" style="font-size:15px;" class="ricon" onclick="myFunction()">&#9776;</a>

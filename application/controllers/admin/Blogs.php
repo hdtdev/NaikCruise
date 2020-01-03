@@ -55,5 +55,37 @@ class Blogs extends CI_Controller
 			redirect('admin/blogs');			
 		}		
 	}
+
+	public function testimonials()
+	{
+		if ($this->session->userdata('isloggedin')) {
+			$data["allTestimonials"] = $this->MBlog->testimonials();
+			$this->load->view("admin/v_ListTestimonials", $data);
+		}else{
+			redirect('admin/user/login');
+		}
+	}
+
+	public function howto()
+	{
+		if ($this->session->userdata('isloggedin')) {
+			$data["allHowto"] = $this->MBlog->howto();
+			$this->load->view("admin/v_ListHowTo", $data);
+		}else{
+			redirect('admin/user/login');
+		}
+	}
+
+	public function faq()
+	{
+		if ($this->session->userdata('isloggedin')) {
+			$data["allFaq"] = $this->MBlog->faq();
+			$this->load->view("admin/v_ListFaq", $data);
+		}else{
+			redirect('admin/user/login');
+		}
+	}
+
+
 }
 ?>

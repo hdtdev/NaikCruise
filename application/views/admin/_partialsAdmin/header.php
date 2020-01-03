@@ -134,10 +134,10 @@ $path    = $this->config->item('path');
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <!-- <h6 class="dropdown-header">Products</h6> -->
-          <a class="dropdown-item" href="<?php echo site_url('admin/products/add')?>">Add new</a>
-          <a class="dropdown-item" href="<?php echo site_url('admin/products')?>">All Products</a>
-          <a class="dropdown-item" href="<?php echo site_url('admin/products/published')?>">Publish</a>
-          <a class="dropdown-item" href="<?php echo site_url('admin/products/draft')?>">Draft</a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/products/add')?>"><i class="fas fa-plus"></i><span style="margin-left: 5%">Add new</span></a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/products')?>"><i class="fas fa-clone"></i><span style="margin-left: 5%">All Products</span></a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/products/published')?>"><i class="fas fa-globe-europe"></i><span style="margin-left: 5%">Publish</span></a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/products/draft')?>"><i class="fas fa-clock"></i><span style="margin-left: 5%">Draft</span></a>
         </div>
       </li>
 
@@ -147,8 +147,8 @@ $path    = $this->config->item('path');
           <span>Ships</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-          <a class="dropdown-item" href="<?php echo site_url('admin/ships/add')?>">Add new</a>
-          <a class="dropdown-item" href="<?php echo site_url('admin/ships')?>">All Ships</a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/ships/add')?>"><i class="fas fa-plus"></i><span style="margin-left: 5%">Add new</span></a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/ships')?>"><i class="fas fa-clone"></i><span style="margin-left: 5%">All Ships</span></a>
         </div>
       </li>
 
@@ -159,9 +159,11 @@ $path    = $this->config->item('path');
         </a>
         <div class="dropdown-menu" aria-labelledby="pagesDropdown">
           <!-- <h6 class="dropdown-header">Products</h6> -->
-          <a class="dropdown-item" href="<?php echo site_url('admin/blogs/add')?>">Add new</a>
-          <a class="dropdown-item" href="<?php echo site_url('admin/blogs')?>">All Blogs</a>
-          <a class="dropdown-item" href="<?php echo site_url('admin/blogs')?>">FAQ</a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/blogs/add')?>"><i class="fas fa-plus"></i><span style="margin-left: 5%">Add new</span></a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/blogs')?>"><i class="fas fa-clone"></i><span style="margin-left: 5%">All blogs</span></a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/blogs/howto')?>"><i class="fas fa-chalkboard"></i><span style="margin-left: 5%">How to</span></a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/blogs/testimonials')?>"><i class="fas fa-comments"></i><span style="margin-left: 5%">Testimonials</span></a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/blogs/faq')?>"><i class="fas fa-question"></i><span style="margin-left: 5%">Faq</span></a>
           <!-- <a class="dropdown-item" href="#">Published</a>
           <a class="dropdown-item" href="#">Draft</a> -->
         </div>

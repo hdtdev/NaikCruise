@@ -27,6 +27,18 @@ class Howto extends CI_Controller
 		$data["boarding"] = $this->MBlogFE->howToBoarding();
 		$this->load->view("v_boardingDay", $data);
 	}
+
+	public function alreadyBooked()
+	{
+		$data["alreadyBooked"]= $this->MBlogFE->alreadyBooked();
+		$this->load->view("v_alreadyBooked", $data);
+	}
+
+	public function packingChecklist()
+	{
+		$data["packingChecklist"]= $this->MBlogFE->packingChecklist();
+		$this->load->view("v_packingChecklist", $data);
+	}
 }
 
 ?>

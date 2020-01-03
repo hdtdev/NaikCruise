@@ -19,6 +19,18 @@ class MBlogFE extends CI_Model
 		return $sql->row();
 	}
 
+	public function alreadyBooked()
+	{
+		$sql = $this->db->query("SELECT * FROM tb_blogs WHERE id_category =7 AND id_status=2 ORDER BY id_category DESC LIMIT 1");
+		return $sql->row();
+	}
+
+	public function packingChecklist()
+	{
+		$sql = $this->db->query("SELECT * FROM tb_blogs WHERE id_category =8 AND id_status=2 ORDER BY id_category DESC LIMIT 1");
+		return $sql->row();
+	}
+
 	public function allFaq()
 	{
 		$sql = $this->db->query("SELECT * FROM tb_blogs WHERE id_category = 3 AND id_status= 2");

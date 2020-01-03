@@ -54,6 +54,7 @@ class MBlog extends CI_Model
 		$this->db->from('tb_blogs');
 		$this->db->join('tb_status', 'tb_blogs.id_status = tb_status.id_status');
 		$this->db->join('tb_categories', 'tb_blogs.id_category = tb_categories.id_category');		
+		$this->db->order_by("id_blog","DESC");
 		return $this->db->get()->result();
 	}
 
@@ -85,6 +86,36 @@ class MBlog extends CI_Model
 
 		$sql = $this->db->query("UPDATE tb_blogs SET title_blog = $title_blog, slug_blog = $slug_blog, content_blog = $content_blog, id_category = $id_category, id_status = $id_status, image_blog='$image_blog' WHERE id_blog= ".intval($id));
 		return true;
+	}
+
+	public function testimonials()
+	{
+		$this->db->select('tb_blogs.*, tb_status.*, tb_categories.*');
+		$this->db->from('tb_blogs');
+		$this->db->join('tb_status', 'tb_blogs.id_status = tb_status.id_status');
+		$this->db->join('tb_categories', 'tb_blogs.id_category = tb_categories.id_category');		
+		$this->db->where('tb_blogs.id_category', 5);
+		return $this->db->get()->result();
+	}
+
+	public function howto()
+	{
+		$this->db->select('tb_blogs.*, tb_status.*, tb_categories.*');
+		$this->db->from('tb_blogs');
+		$this->db->join('tb_status', 'tb_blogs.id_status = tb_status.id_status');
+		$this->db->join('tb_categories', 'tb_blogs.id_category = tb_categories.id_category');	
+		
+		return $this->db->get()->result();
+	}
+
+	public function faq()
+	{
+		$this->db->select('tb_blogs.*, tb_status.*, tb_categories.*');
+		$this->db->from('tb_blogs');
+		$this->db->join('tb_status', 'tb_blogs.id_status = tb_status.id_status');
+		$this->db->join('tb_categories', 'tb_blogs.id_category = tb_categories.id_category');	
+		$this->db->where('tb_blogs.id_category', 3);		
+		return $this->db->get()->result();
 	}
 
 }
