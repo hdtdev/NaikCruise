@@ -518,6 +518,14 @@
             
             z-index:100;
           }
+
+          .dropdown-menu>li>a:hover{
+            background-color: #ff9b2d!important;
+            color: black!important;
+          }
+          .navbar{
+            opacity: 0.9!important;
+          }
           </style>
         <!-- Bootstrap css -->
 
@@ -536,7 +544,7 @@
     </div> -->
     <!-- end preloader -->
     
-    <!-- Start navbar  -->
+
     <!-- <div class="my-navbar">
         <ul class="my-ul">
           <li class="my-li"><a class="<?php echo $this->uri->segment(1)== ''? 'active': ''?>" href="<?php echo site_url('')?>">Home</a></li>
@@ -550,10 +558,8 @@
           <li class="my-li"><a href="#">FAQ</a></li>
         </ul>
     </div> -->
-
-    <!-- Start Navbar Responsive -->
     
-    <div class="rtopnav" id="rmyTopnav">
+    <!-- <div class="rtopnav" id="rmyTopnav">
       <a href="<?php echo site_url('')?>" class="<?php echo $this->uri->segment(1)== ''? 'ractive': ''?>" >Home</a>
 
       <a href="<?php echo site_url('OurShips')?>" class="<?php echo $this->uri->segment(1)== 'OurShips'? 'ractive': ''?>">Our ships</a>
@@ -575,7 +581,40 @@
       <a href="<?php echo site_url('faq')?>" class="<?php echo $this->uri->segment(1)== 'faq'? 'ractive': ''?>">FAQ</a>
       
       <a href="javascript:void(0);" style="font-size:15px;" class="ricon" onclick="myFunction()">&#9776;</a>
+    </div> -->
 
-      
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img class="navbar-brand" src="#">
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+        <li class="<?php echo $this->uri->segment(1)== ''? 'active': ''?>"><a href="<?php echo site_url('')?>">Home</a></li>
+        <li class="<?php echo $this->uri->segment(1)== 'OurShips'? 'active': ''?>"><a href="<?php echo site_url('OurShips')?>">Our Ship</a></li>
+        <li class="<?php echo $this->uri->segment(1)== 'products'? 'active': ''?>"><a href="<?php echo site_url('products')?>">Products</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">How to?
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="<?php echo site_url('howto/getticket')?>">Get a ticket</a></li>
+            <li><a href="<?php echo site_url('howto/boardingday')?>">Boarding Day</a></li>
+            <li><a href="<?php echo site_url('howto/alreadyBooked')?>">Already Booked</a></li>
+            <li><a href="<?php echo site_url('howto/packingChecklist')?>">Packing Checklist</a></li>
+          </ul>
+        </li>
+        <li class="<?php echo $this->uri->segment(1)== 'branches'? 'active': ''?>"><a href="<?php echo site_url('branches')?>">Branches</a></li>
+        <li class="<?php echo $this->uri->segment(1)== 'faq'? 'active': ''?>"><a href="<?php echo site_url('faq')?>">FAQ</a></li>
+      </ul>
+      </div>
     </div>
+  </nav> 
+
+
     <!-- End Navbar -->

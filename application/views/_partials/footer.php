@@ -25,8 +25,8 @@
         
           <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
             <div class="footer-single">
-              <h6>Branches</h6>
-              <ul>
+              <h6 style="margin-left: 15%;">Branches</h6>
+              <ul style="list-style: none!important;">
                 <li><a href="#">Jabodetabek</a></li>
                 <li><a href="#">Bandung</a></li>
                 <li><a href="#">Yogyakarta</a></li>
@@ -40,8 +40,8 @@
         
           <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
             <div class="footer-single">
-              <h6>About Wakuwaku</h6>
-              <ul>
+              <h6 style="margin-left: 15%;">About NaikCruise</h6>
+              <ul style="list-style: none!important;">
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Terms and Condition</a></li>
                 <li><a href="#">Blog</a></li>
