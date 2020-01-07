@@ -52,9 +52,16 @@ class Banner extends CI_Controller
 
 	}
 
-	public function deleteBanner()
+	public function deleteBanner($id)
 	{
-		//
+		$data = $this->MBanner->getById($id);
+		if (!empty($data->image_main_banner)){
+			chmod("upload".$data->image_main_banner, 0777);
+			unlink("upload/".$data->image_main_banner);
+		}
+		if ($this->MBanner->deleteList($id)) {
+			redirect("admin/banner");
+		}
 	}
 }
 

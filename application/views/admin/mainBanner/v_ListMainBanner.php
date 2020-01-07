@@ -30,7 +30,7 @@
               <td width="150" class="text-center">                 
                 <a href="<?php echo site_url('admin/banner/update/'.$row->id_main_banner)?>"
                  class="btn btn-small"><i class="fas fa-edit"></i></a>
-                 <a onclick="deleteConfirm('<?php echo site_url('admin/banner/deleteBanner/'.$row->id_main_banner) ?>')"href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i></a>
+                 <a onclick="deleteConfirm('<?php echo site_url('admin/Banner/deleteBanner/'.$row->id_main_banner) ?>')"href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i></a>
               </td>
             </tr>
             <?php endforeach;?>

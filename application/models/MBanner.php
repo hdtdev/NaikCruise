@@ -78,6 +78,11 @@ class MBanner extends CI_Model
 		return true;
 	}
 
+	public function deleteList($id)
+	{
+		return $this->db->delete("tb_main_banner", array("id_main_banner"=>$id));
+	}
+
 }
 
 ?>
