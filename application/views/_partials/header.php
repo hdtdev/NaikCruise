@@ -537,51 +537,7 @@
     </head>
   
     <body id="body">
-  
-    <!-- preloader -->
-<!--     <div id="preloader">
-      <img src="img3/steer.png" alt="Preloader">
-    </div> -->
-    <!-- end preloader -->
     
-
-    <!-- <div class="my-navbar">
-        <ul class="my-ul">
-          <li class="my-li"><a class="<?php echo $this->uri->segment(1)== ''? 'active': ''?>" href="<?php echo site_url('')?>">Home</a></li>
-          <li class="my-li"><a href="#">Plans</a></li>
-          <li class="my-li"><a class="<?php echo $this->uri->segment(1)== 'products'? 'active': ''?>" href="<?php echo site_url('products')?>">Package</a></li>
-          <li class="my-li"><a href="#">How to?</a></li>
-
-          
-          <li class="my-li"><a href="#">Contact</a></li>
-          <li class="my-li"><a href="#">About</a></li>
-          <li class="my-li"><a href="#">FAQ</a></li>
-        </ul>
-    </div> -->
-    
-    <!-- <div class="rtopnav" id="rmyTopnav">
-      <a href="<?php echo site_url('')?>" class="<?php echo $this->uri->segment(1)== ''? 'ractive': ''?>" >Home</a>
-
-      <a href="<?php echo site_url('OurShips')?>" class="<?php echo $this->uri->segment(1)== 'OurShips'? 'ractive': ''?>">Our ships</a>
-      
-      <a href="<?php echo site_url('products')?>" class="<?php echo $this->uri->segment(1)== 'products'? 'ractive': ''?>">Products</a>
-      
-      <div class="rdropdown">
-        <button class="rdropbtn" class="ractive">How to? 
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="rdropdown-content">
-          <a href="<?php echo site_url('howto/getticket')?>">Get a ticket</a>
-          <a href="<?php echo site_url('howto/boardingday')?>">Boarding Day</a>
-          <a href="<?php echo site_url('howto/alreadyBooked')?>">Already Booked</a>
-          <a href="<?php echo site_url('howto/packingChecklist')?>">Packing Checklist</a>
-        </div>
-      </div>
-      <a href="<?php echo site_url('branches')?>" class="<?php echo $this->uri->segment(1)== 'branches'? 'ractive': ''?>">Branches</a>
-      <a href="<?php echo site_url('faq')?>" class="<?php echo $this->uri->segment(1)== 'faq'? 'ractive': ''?>">FAQ</a>
-      
-      <a href="javascript:void(0);" style="font-size:15px;" class="ricon" onclick="myFunction()">&#9776;</a>
-    </div> -->
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">

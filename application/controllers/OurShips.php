@@ -20,8 +20,9 @@ class OurShips extends CI_Controller
 		$this->load->view("v_ourShip", $data);
 	}
 
-	public function view($slug)
+	public function view($id_ship,$slug)
 	{
+		$data["productShip"] = $this->MHomeFE->getProductByShip($id_ship);
 		$data["detailsShip"] = $this->MHomeFE->getDetailsShip($slug);
 		$this->load->view("v_detailsOurShip", $data);
 	}

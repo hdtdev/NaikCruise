@@ -26,7 +26,7 @@
 					<div class="container" style="padding: 3%">
 				        <div class="row">
 				        	<?php foreach($listDream as $dream):?>
-					          	<a href="<?php echo site_url('OurShips/view/'.$dream->slug_ship_list)?>" style="color: #575757!important;">
+					          	<a href="<?php echo site_url('OurShips/view/'.$dream->id_ship_list."/".$dream->slug_ship_list)?>" style="color: #575757!important;">
 					          		<div class="col-sm-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
 					            		<img src="<?php echo base_url('upload/').$dream->image_ship_list?>" style="width: 100%; height: 100%;">
 					            		<div class="text-center"><h4><b><?php echo $dream->name_ship_list?></b></h4></div>

@@ -49,9 +49,9 @@ class MHomeFE extends CI_Model
 		return $sql->result();
 	}
 
-	public function getProductByShip($ship)
+	public function getProductByShip($id_ship)
 	{
-		$sql = $this->db->query("SELECT tb_products.*, tb_ships_list.*, tb_status.* FROM tb_products INNER JOIN tb_ships_list ON tb_products.id_ship_list = tb_ships_list.id_ship_list INNER JOIN tb_status ON tb_products.id_status = tb_status.id_status WHERE tb_products.id_ship_list =" .intval($ship));
+		$sql = $this->db->query("SELECT tb_products.*, tb_ships_list.*, tb_status.* FROM tb_products INNER JOIN tb_ships_list ON tb_products.id_ship_list = tb_ships_list.id_ship_list INNER JOIN tb_status ON tb_products.id_status = tb_status.id_status WHERE tb_products.id_ship_list =" .intval($id_ship));
 		return $sql->result();
 	}
 
@@ -96,6 +96,7 @@ class MHomeFE extends CI_Model
 		$sql = $this->db->query("SELECT * FROM tb_ships_list WHERE slug_ship_list='$slug' AND id_status=2");
 		return $sql->row();
 	}
+
 }
 
 
