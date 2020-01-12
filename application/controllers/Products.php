@@ -16,6 +16,7 @@ class Products extends CI_Controller
 
 	public function index()
 	{
+		$data["collection"] = $this->MHomeFE->allCollections();
 		$data["allProducts"] = $this->MHomeFE->allProducts();
 		$this->load->view("v_products", $data);
 
@@ -28,6 +29,13 @@ class Products extends CI_Controller
 		$data["viewItineraries"] = $this->MHomeFE->getItineraries($id);
 		$data["viewImageSlider"] = $this->MHomeFE->getImageSlider($id);
  		$this->load->view("v_detailsProduct", $data);
+	}
+
+	public function collection($collection)
+	{
+		$data["collection"] = $this->MHomeFE->allCollections();
+		$data["viewCollection"] = $this->MHomeFE->getByCollection($collection);
+		$this->load->view("v_listCollections",$data);
 	}
 }
 

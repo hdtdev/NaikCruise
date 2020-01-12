@@ -7,9 +7,15 @@
       <div class="container">
         <div class="row">
     
-          <div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms" style="margin-bottom: 2.5%">
+          <div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms">
             <h1>Products</h1>
             <!-- <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div> -->
+          </div>
+
+          <div class="text-center" style="margin-bottom: 5%;">
+            <?php foreach($collection as $coll):?>
+            <a href="<?php echo site_url('products/collection/'.$coll->product_collection)?>"><button class="btn btn-all" style="margin-top: 7%;"><b><?php echo $coll->product_collection?></b></button></a>
+            <?endforeach;?>
           </div>
           
           <?php foreach($allProducts as $all):?>

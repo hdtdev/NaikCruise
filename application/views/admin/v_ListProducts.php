@@ -1,5 +1,4 @@
 <?php $this->load->view("admin/_partialsAdmin/header")?>
-<!-- <?php var_dump($allProducts)?> -->
 
         <div class="card mb-3">
           <div class="card-header">

@@ -7,10 +7,12 @@
     <section style="padding: 0px!important; margin-top: 51px!important;">
       <div class="slideshow-containerm">
         <?php foreach($mainBanner as $main):?>
-          <div class="mySlidesm fadem">
-            <img class="imgm" src="<?php echo base_url('upload/').$main->image_main_banner?>" style="width:100%">
-            <div data-wow-duration="700ms" data-wow-delay="200ms" class="textm wow bounceInDown animated"></div>
-          </div>
+          <a href="<?php echo $main->url_main_banner?>">
+            <div class="mySlidesm fadem">
+              <img class="imgm" src="<?php echo base_url('upload/').$main->image_main_banner?>" style="width:100%">
+              <div data-wow-duration="700ms" data-wow-delay="200ms" class="textm wow bounceInDown animated"></div>
+            </div>
+          </a>
         <?php endforeach;?>
 
         <a class="prevm" onclick="plusSlidesm(-1)">&#10094;</a>

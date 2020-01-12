@@ -97,6 +97,19 @@ class MHomeFE extends CI_Model
 		return $sql->row();
 	}
 
+	public function allCollections()
+	{
+		$sql = $this->db->query("SELECT DISTINCT product_collection FROM tb_products Where id_status = 2; ");
+		return $sql->result();
+	}
+
+	public function getByCollection($collection)
+	{
+
+		$sql = $this->db->query("SELECT tb_products.*, tb_ships_list.*, tb_status.* FROM tb_products INNER JOIN tb_ships_list ON tb_products.id_ship_list = tb_ships_list.id_ship_list INNER JOIN tb_status ON tb_products.id_status = tb_status.id_status WHERE product_collection='$collection' AND tb_products.id_status=2");
+		return $sql->result();
+	}
+
 }
 
 
